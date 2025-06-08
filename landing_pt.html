@@ -33,6 +33,10 @@
             border-radius: 6px;
             font-weight: bold;
         }
+        .button:focus {
+            outline: none;
+            box-shadow: none;
+        }
         .descricao {
             max-width: 800px;
             margin: 40px auto;
@@ -44,6 +48,11 @@
             font-size: 28px;
             margin-bottom: 16px;
             text-align: center;
+        }
+        .descricao h3 {
+            color: #FFCC33;
+            font-size: 22px;
+            margin-top: 24px;
         }
         .descricao p, .descricao ul {
             font-size: 17px;
@@ -65,63 +74,86 @@
             color: #FFCC33;
             text-decoration: none;
         }
+        #guia-completo {
+            background-color: #112c41;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        #guia-completo h4 {
+            color: #FFCC33;
+            margin-top: 1em;
+            font-size: 20px;
+        }
+        #guia-completo p, #guia-completo ul, #guia-completo li, #guia-completo pre {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        #guia-completo pre {
+            background-color: #0a2537;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            height: 2600px;
+        }
     </style>
 </head>
 <body>
-
     <img src="landing_page_pt.png" alt="ChordFlow apps" class="hero-image">
-
     <div class="buttons">
         <a href="https://play.google.com/store/apps/details?id=seu.package.id" class="button">Ver na Google Play</a>
-        <a href="https://drive.google.com/uc?export=download&id=1nHSG4JDqvpU91b1oujEvpgmMAA3POWow" class="button" target="_blank">Descarregar para Windows</a>
+        <a href="ChordFlow.zip" class="button">Descarregar para Windows</a>
     </div>
-
     <section class="descricao">
-        <h2>Para que serve o ChordFlow?</h2>
-        <p>
-            ChordFlow é uma aplicação concebida para ajudar músicos a criar, organizar e gerir os seus repertórios de forma prática, intuitiva e sem distrações.
-        </p>
-        <p>
-            A versão para Android é otimizada para utilização em palco, ensaios ou estúdio, apresentando os acordes e secções de cada música de forma clara e acessível.
-        </p>
-        <p>
-            Já a versão para Windows é pensada como um auxiliar de criação e edição de repertórios — ideal para ser usada confortavelmente num computador durante a preparação de concertos. Permite organizar músicas, editar acordes e estruturar secções com facilidade, e depois exportar para a app Android, onde os repertórios são usados em ambiente real de atuação.
-        </p>
-
-        <h2>Porque criámos a versão Windows</h2>
-        <p>
-            Criar repertórios longos no telemóvel ou tablet pode ser moroso e pouco prático — especialmente com dezenas de músicas.  
-            A versão Windows do ChordFlow surgiu precisamente para resolver isso:
-        </p>
+        <h2>Sobre o ChordFlow</h2>
+        <p>O ChordFlow é uma aplicação gratuita e sem publicidade, criada por um músico amador que precisava de uma maneira simples e rápida de visualizar progressões de acordes sem letras. Ao longo do tempo, a aplicação evoluiu para também incluir letras completas com acordes integrados, com o objetivo de servir um público mais amplo — desde ensaios até performances ao vivo.</p>
+        <p>Como é desenvolvida por uma única pessoa, a aplicação ainda pode ter algumas limitações ou pequenos bugs. Existem outras aplicações no mercado com recursos mais avançados, mas também podem ser mais complexas e menos práticas no palco. O ChordFlow pretende ser uma solução leve, intuitiva e útil para o essencial.</p>
+        <p>A versão para Android está otimizada para utilização em palco, ensaios ou estúdio, apresentando os acordes e secções de cada música de forma clara e acessível.</p>
+        <p>Já a versão para Windows foi pensada como um auxiliar de criação e edição de repertórios — ideal para usares confortavelmente num computador durante a preparação de concertos. Permite-te organizar músicas, editar acordes e estruturar secções com facilidade, e depois exportar para a app Android, onde usas os repertórios em ambiente real de atuação.</p>
+        <h3>Porque criámos a versão Windows</h3>
+        <p>Criar repertórios longos no telemóvel ou tablet pode ser moroso e pouco prático — especialmente com dezenas de músicas. A versão Windows do ChordFlow surgiu precisamente para resolver isso:</p>
         <ul>
-            <li>Editar músicas e acordes de forma mais rápida e confortável</li>
-            <li>Organizar setlists com rato e teclado</li>
-            <li>Exportar para a app Android com facilidade</li>
+            <li>Editares músicas e acordes de forma mais rápida e confortável</li>
+            <li>Organizares setlists com rato e teclado</li>
+            <li>Exportares para a app Android com facilidade</li>
         </ul>
-        <p>
-            Assim preparas tudo no PC e levas apenas o essencial para o palco.
-        </p>
-
-        <h3>📌 Resumo do propósito:</h3>
+        <p>Assim preparas tudo no PC e levas apenas o essencial para o palco.</p>
+        <h3>Resumo do propósito:</h3>
         <ul>
-            <li>Criar e editar repertórios musicais com secções organizadas</li>
-            <li>Gerir acordes e estrutura das músicas</li>
-            <li>Usar a versão Windows como ferramenta de apoio</li>
-            <li>Utilizar a versão Android para consulta ao vivo em palco ou ensaio</li>
+            <li>Criares e editares repertórios musicais com secções organizadas</li>
+            <li>Gerires acordes e estrutura das músicas</li>
+            <li>Usares a versão Windows como ferramenta de apoio</li>
+            <li>Utilizares a versão Android para consulta ao vivo em palco ou ensaio</li>
         </ul>
-
-        <h2>Apoiar o Desenvolvimento</h2>
-        <p>
-            O ChordFlow é uma aplicação gratuita e sem anúncios. Se gostas da app e queres apoiar o seu desenvolvimento, podes contribuir via PayPal. Cada apoio, por mais pequeno que seja, é muito bem-vindo e faz a diferença!
-        </p>
-        <div class="buttons">
-            <a href="https://www.paypal.me/emanuelmelo10" class="button" target="_blank">💛 Apoiar via PayPal</a>
+        <h2>Guia Rápido</h2>
+        <p>Descobre as funcionalidades principais da app e como tirares o máximo partido dela em poucos passos.</p>
+        <button class="button" onclick="toggleGuia()">Mostrar / Ocultar Guia Completo</button>
+        <div id="guia-completo" style="display: none; text-align: left;">
+            <iframe src="guia_formatado.html"></iframe>
         </div>
+        <script>
+            function toggleGuia() {
+                const guia = document.getElementById('guia-completo');
+                guia.style.display = guia.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+        <h2>Feedback e Apoio</h2>
+        <p>Se tiveres sugestões ou encontrares algum problema, terei todo o gosto em receber o teu feedback.</p>
+        <p>A aplicação é gratuita e sem publicidade. Se quiseres apoiar o desenvolvimento, toda a ajuda é bem-vinda.</p>
+        <div style="margin-top: 20px;">
+            <a class="button" href="mailto:melo.comercial@gmail.com">Enviar email de contacto</a>
+        </div>
+        <h2>Apoiar o Desenvolvimento</h2>
+        <p>O ChordFlow é uma aplicação gratuita e sem anúncios. Se gostas da app e queres apoiar o seu desenvolvimento, podes contribuir via PayPal. Cada apoio, por mais pequeno que seja, é muito bem-vindo e faz a diferença!</p>
+        <a class="button" href="https://www.paypal.me/emanuelmelo10">Apoiar via PayPal</a>
     </section>
-
     <footer>
-        <p><a href="https://melo101.github.io/ChordFlow/privacy_pt.html">Política de Privacidade</a></p>
+        <p><a href="https://chordflow.org/privacy_pt.html">Política de Privacidade</a></p>
     </footer>
 </body>
 </html>
-
