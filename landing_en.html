@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChordFlow - Musician's Companion</title>
+    <title>ChordFlow - App for Musicians</title>
     <style>
         body {
             background-color: #0a2537;
@@ -34,6 +33,10 @@
             border-radius: 6px;
             font-weight: bold;
         }
+        .button:focus {
+            outline: none;
+            box-shadow: none;
+        }
         .descricao {
             max-width: 800px;
             margin: 40px auto;
@@ -45,6 +48,11 @@
             font-size: 28px;
             margin-bottom: 16px;
             text-align: center;
+        }
+        .descricao h3 {
+            color: #FFCC33;
+            font-size: 22px;
+            margin-top: 24px;
         }
         .descricao p, .descricao ul {
             font-size: 17px;
@@ -69,59 +77,50 @@
     </style>
 </head>
 <body>
-
     <img src="landing_page_en.png" alt="ChordFlow apps" class="hero-image">
-
     <div class="buttons">
         <a href="https://play.google.com/store/apps/details?id=seu.package.id" class="button">View on Google Play</a>
-        <a href="https://drive.google.com/uc?export=download&id=1nHSG4JDqvpU91b1oujEvpgmMAA3POWow" class="button" target="_blank">Download for Windows</a>
+        <a href="ChordFlow.zip" class="button">Download for Windows</a>
     </div>
-
     <section class="descricao">
-        <h2>What is ChordFlow for?</h2>
-        <p>
-            ChordFlow is an application designed to help musicians create, organize and manage their setlists in a practical, intuitive and distraction-free way.
-        </p>
-        <p>
-            The Android version is optimized for use on stage, in rehearsals or in the studio, presenting chords and song sections in a clear and accessible format.
-        </p>
-        <p>
-            The Windows version is intended as a creation and editing assistant — ideal for comfortably preparing songs and setlists on a computer before a concert. You can structure sections, edit chords and export everything to the Android app, where the setlists are used in real performance contexts.
-        </p>
-
-        <h2>Why we created the Windows version</h2>
-        <p>
-            Creating long setlists on a tablet or phone can be tedious — especially when you're dealing with dozens of songs.
-            That's why we built ChordFlow for Windows:
-        </p>
+        <h2>About ChordFlow</h2>
+        <p>ChordFlow is a free and ad-free application created by an amateur musician who needed a quick and simple way to view chord progressions without lyrics. Over time, the app evolved to also support full lyrics with integrated chords, aiming to serve a broader audience — from rehearsals to live performances.</p>
+        <p>As it is developed by just one person, the app may still have some limitations or minor bugs. There are other apps on the market with more advanced features, but they can also be more complex and less practical on stage. ChordFlow aims to be a lightweight, intuitive and essential solution.</p>
+        <p>The Android version is optimized for stage use, rehearsals or studio sessions, presenting chords and sections clearly and accessibly.</p>
+        <p>The Windows version was designed as a creation and editing assistant — ideal for comfortably preparing your setlists on a computer before your concerts. You can organize songs, edit chords and structure sections easily, and then export to the Android app for real use on stage.</p>
+        <h3>Why the Windows version was created</h3>
+        <p>Creating long setlists on a phone or tablet can be slow and impractical — especially with dozens of songs. The Windows version of ChordFlow was created to solve this:</p>
         <ul>
-            <li>Edit songs and chords faster and more comfortably</li>
-            <li>Organize your setlists using keyboard and mouse</li>
-            <li>Export everything to the Android app in a few clicks</li>
+            <li>Edit songs and chords more quickly and comfortably</li>
+            <li>Organize setlists using your mouse and keyboard</li>
+            <li>Export easily to the Android app</li>
         </ul>
-        <p>
-            This way, you prepare everything on your PC and bring only the essentials to the stage.
-        </p>
-
-        <h3>📌 Purpose Summary:</h3>
+        <p>This way, you prepare everything on your PC and take only the essentials to the stage.</p>
+        <h3>Purpose Summary:</h3>
         <ul>
-            <li>Create and edit song setlists with organized sections</li>
+            <li>Create and edit musical setlists with organized sections</li>
             <li>Manage chords and song structure</li>
-            <li>Use the Windows version as a preparation tool</li>
-            <li>Use the Android version for live consultation during shows or rehearsals</li>
+            <li>Use the Windows version as a support tool</li>
+            <li>Use the Android version for live consultation on stage or rehearsal</li>
         </ul>
 
-        <h2>Support the Development</h2>
-        <p>
-            ChordFlow is a free app with no ads. If you enjoy using it and would like to support its development, you can contribute via PayPal. Any amount, big or small, is truly appreciated and helps keep the project alive!
-        </p>
-        <div class="buttons">
-            <a href="https://www.paypal.me/emanuelmelo10" class="button" target="_blank">💛 Support via PayPal</a>
-        </div>
-    </section>
+        <h2>Quick Guide</h2>
+        <p>Discover the app’s main features and how to make the most of it in just a few steps.</p>
+        <a href="guia_chordflow.html" class="button">Open Full Guide</a>
 
+        <h2>Feedback & Support</h2>
+        <p>If you have suggestions or find any issues, I’d love to hear your feedback.</p>
+        <p>This is a free and ad-free application. If you'd like to support development, all help is appreciated.</p>
+        <div style="margin-top: 20px;">
+            <a class="button" href="mailto:melo.comercial@gmail.com">Send feedback via email</a>
+        </div>
+
+        <h2>Support Development</h2>
+        <p>ChordFlow is free and has no ads. If you enjoy the app and would like to support its development, you can contribute via PayPal. Every bit helps and makes a difference!</p>
+        <a class="button" href="https://www.paypal.me/emanuelmelo10">Support via PayPal</a>
+    </section>
     <footer>
-        <p><a href="https://melo101.github.io/ChordFlow/">Privacy Policy</a></p>
+        <p><a href="https://chordflow.org/privacy_en.html">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
