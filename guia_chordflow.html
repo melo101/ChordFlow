@@ -1,183 +1,336 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-<style>
-    body {
-        background-color: #0a2537;
-        color: white;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    }
-    .yellow-title {
-        color: #FFCC33;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-    p {
-        margin-bottom: 10px;
-    }
-
-.yellow-title {
-    text-align: left;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia do utilizador ChordFlow - Aprenda a usar todas as funcionalidades do aplicativo">
+    <title>Guia do Utilizador - ChordFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FFCC33;
+            --primary-dark: #e6b82e;
+            --bg-color: #0a2537;
+            --bg-light: #112c41;
+            --text-color: #ffffff;
+            --text-light: #dddddd;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 40px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            padding: var(--spacing-md);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-md);
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #222;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background-color: var(--bg-light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .yellow-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.5rem;
+            text-align: left;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        h1.yellow-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-light);
+        }
+        
+        ul {
+            margin-left: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-light);
+        }
+        
+        code {
+            background-color: var(--bg-color);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        .example-box {
+            background-color: var(--bg-color);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin: var(--spacing-md) 0;
+            overflow-x: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing-sm);
+            }
+            
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+    </style>
 </head>
 <body>
-<div style="text-align: center; margin-bottom: 20px;">
-    <a href="landing.html" style="padding: 10px 20px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 8px;">Voltar à Página Inicial</a>
-    <br>
-    </br>
+    <div class="container">
+        <header>
+            <div class="logo">ChordFlow</div>
+            <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
+        </header>
+        
+        <h1 class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</h1>
+        
+        <div class="section">
+<div class="yellow-title">1. LISTA DE REPERTÓRIOS</div>
+<p>Este é o ecrã principal que mostra todos os seus repertórios de músicas.</p>
+<ul>
+    <li>Ver Repertórios: A lista mostra todos os repertórios criados</li>
+    <li>Adicionar Repertório: Toca no botão amarelo com "+" no canto inferior direito</li>
+    <li>Abrir Repertório: toca em qualquer repertório para ver as músicas que contém</li>
+    <li>Menu de Contexto: Pressiona prolongadamente num repertório para aceder a opções adicionais como eliminar ou exportar o repertório</li>
+</ul>
 </div>
-<div style="max-width: 800px; margin: 0 auto; text-align: left;">
-<div class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</div><div class="yellow-title">1. LISTA DE REPERTÓRIOS</div><p>Este é o ecrã principal que mostra todos os seus repertórios de músicas.</p>
-<p>• Ver Repertórios: A lista mostra todos os repertórios criados</p>
-<p>• Adicionar Repertório: Toca no botão amarelo com "+" no canto inferior direito</p>
-<p>• Abrir Repertório: toca em qualquer repertório para ver as músicas que contém</p>
-<p>• Menu de Contexto: Pressiona prolongadamente num repertório para aceder a opções adicionais como eliminar ou exportar o repertório</p>
-<div class="yellow-title">2. LISTA DE MÚSICAS</div><p>Este ecrã mostra todas as músicas num repertório específico.</p>
-<p>• Ver Músicas: A lista mostra todas as músicas no repertório selecionado</p>
-<p>• Adicionar Música: Toca no botão amarelo com "+" para criar uma nova música</p>
-<p>• Abrir Música: Toca em qualquer música para ver os seus acordes</p>
-<p>• Pesquisar: Utiliza a caixa de pesquisa para encontrar músicas rapidamente</p>
-<p>• Alterar Ordem: Utiliza os botões flutuantes para alterar a ordem das músicas no repertório</p>
-<p>• Menu de Contexto: Pressiona prolongadamente numa música para editar ou eliminar</p>
+
+<div class="section">
+<div class="yellow-title">2. LISTA DE MÚSICAS</div>
+<p>Este ecrã mostra todas as músicas num repertório específico.</p>
+<ul>
+    <li>Ver Músicas: A lista mostra todas as músicas no repertório selecionado</li>
+    <li>Adicionar Música: Toca no botão amarelo com "+" para criar uma nova música</li>
+    <li>Abrir Música: Toca em qualquer música para ver os seus acordes</li>
+    <li>Pesquisar: Utiliza a caixa de pesquisa para encontrar músicas rapidamente</li>
+    <li>Alterar Ordem: Utiliza os botões flutuantes para alterar a ordem das músicas no repertório</li>
+    <li>Menu de Contexto: Pressiona prolongadamente numa música para editar ou eliminar</li>
+</ul>
+</div>
+
+<div class="section">
 <div class="yellow-title">3. ECRÃ DE DETALHE DA MÚSICA</div>
 <p>Este ecrã mostra os acordes para tocar.</p>
-<p>• Ver Música: Vê os acordes formatados por secções</p>
-<p>• Deslocar: Desliza para cima e para baixo para ver toda a música</p>
-<p>• Zoom: Utiliza o gesto de pinça (dois dedos) para aumentar ou diminuir o tamanho do texto</p>
-<p>• Repor Zoom: Toca duas vezes para restaurar o tamanho original do texto</p>
-<p>• Transpor: Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</p>
-<p>• Diálogo de Transposição: Ajusta o número de semitons usando a barra deslizante e escolhe entre notação com sustenidos (#) ou bemóis (b)</p>
-<p>• Voltar à Lista: Desliza da esquerda para a direita para voltar à lista de músicas</p>
+<ul>
+    <li>Ver Música: Vê os acordes formatados por secções</li>
+    <li>Deslocar: Desliza para cima e para baixo para ver toda a música</li>
+    <li>Zoom: Utiliza o gesto de pinça (dois dedos) para aumentar ou diminuir o tamanho do texto</li>
+    <li>Repor Zoom: Toca duas vezes para restaurar o tamanho original do texto</li>
+    <li>Transpor: Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</li>
+    <li>Diálogo de Transposição: Ajusta o número de semitons usando a barra deslizante e escolhe entre notação com sustenidos (#) ou bemois (b)</li>
+    <li>Voltar à Lista: Desliza da esquerda para a direita para voltar à lista de músicas</li>
+</ul>
+</div>
+
+<div class="section">
 <div class="yellow-title">4. ECRÃ DE EDIÇÃO DE MÚSICA</div>
 <p>Este ecrã permite criar ou modificar uma música.</p>
-<p>• Editar Título: Preenche o nome da música</p>
-<p>• Definir Tonalidade: Especifica a tonalidade original da música (por ex., C, D, Am)</p>
-<p>• Adicionar Secções: Digita o nome da secção (por ex., Verso, Refrão), digita os acordes da secção e toca em "Adicionar Secção"</p>
-<p>• Editar Secções: Pressiona prolongadamente numa secção já adicionada para a editar ou remover</p>
-<p>• Guardar Música: Toca no botão "Guardar Música" na parte inferior do ecrã</p>
+<ul>
+    <li>Editar Título: Preenche o nome da música</li>
+    <li>Definir Tonalidade: Especifica a tonalidade original da música (por ex., C, D, Am)</li>
+    <li>Adicionar Secções: Digita o nome da secção (por ex., Verso, Refrão), digita os acordes da secção e toca em "Adicionar Secção"</li>
+    <li>Editar Secções: Pressiona prolongadamente numa secção já adicionada para a editar ou remover</li>
+    <li>Guardar Música: Toca no botão "Guardar Música" na parte inferior do ecrã</li>
+</ul>
+</div>
+
+<div class="section">
 <div class="yellow-title">5. GESTOS E INTERAÇÕES ESPECIAIS</div>
-<p>• Deslizar no Ecrã de Detalhes: Desliza da esquerda para a direita para voltar à lista de músicas</p>
-<p>• Zoom no Ecrã de Detalhes: Belisca com dois dedos para aumentar/diminuir o texto; Toca duplo para restaurar o tamanho original</p>
-<p>• Menu de Contexto: Pressiona prolongadamente num item para ver opções adicionais</p>
+<ul>
+    <li>Deslizar no Ecrã de Detalhes: Desliza da esquerda para a direita para voltar à lista de músicas</li>
+    <li>Zoom no Ecrã de Detalhes: Belisca com dois dedos para aumentar/diminuir o texto; Toca duplo para restaurar o tamanho original</li>
+    <li>Menu de Contexto: Pressiona prolongadamente num item para ver opções adicionais</li>
+</ul>
+</div>
+
+<div class="section">
 <div class="yellow-title">6. TRANSPOSIÇÃO DE TOM</div>
 <p>Recurso para mudar o tom de uma música para acomodar vocais ou instrumentos diferentes.</p>
-<p>1. Abre uma música no ecrã de detalhes</p>
-<p>2. Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</p>
-<p>3. Ajusta o número de semitons usando a barra deslizante (valores positivos para subir o tom, negativos para baixar)</p>
-<p>4. Escolhe a notação preferida: sustenidos (#) ou bemóis (b) nas definições ou no diálogo de transposição</p>
-<p>5. Toca em "Aplicar" para ver os acordes transpostos</p>
-<p>6. O tom atual é exibido ao lado do título da música</p>
-<p>7. A transposição é guardada automaticamente</p>
-<p>Nota: A notação com bemóis é particularmente útil para instrumentos como saxofone, trompete e outros instrumentos de sopro que normalmente usam essa notação.</p>
+<ol>
+    <li>Abre uma música no ecrã de detalhes</li>
+    <li>Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</li>
+    <li>Ajusta o número de semitons usando a barra deslizante (valores positivos para subir o tom, negativos para baixar)</li>
+    <li>Escolhe a notação preferida: sustenidos (#) ou bemois (b) nas definições ou no diálogo de transposição</li>
+    <li>Toca em "Aplicar" para ver os acordes transpostos</li>
+    <li>O tom atual é exibido ao lado do título da música</li>
+    <li>A transposição é guardada automaticamente</li>
+</ol>
+<p>Nota: A notação com bemois é particularmente útil para instrumentos como saxofone, trompete e outros instrumentos de sopro que normalmente usam essa notação.</p>
+</div>
+
+<div class="section">
 <div class="yellow-title">7. MÚSICAS COM LETRAS E ACORDES</div>
 <p>O ChordFlow permite adicionar músicas com letras e acordes embutidos, facilitando a leitura e execução durante a performance.</p>
-<p>1. Toca no botão "+" na lista de músicas</p>
-<p>2. Seleciona "Adicionar Música com Letras"</p>
-<p>3. Preenche o título e o tom da música</p>
-<p>4. Adiciona as linhas de acordes começando com um ponto (.) e posicionando os acordes diretamente acima das sílabas correspondentes na linha seguinte:</p>
-<p>[Verso]</p><p>.       C       G        Am      F</p>
+<ol>
+    <li>Toca no botão "+" na lista de músicas</li>
+    <li>Seleciona "Adicionar Música com Letras"</li>
+    <li>Preenche o título e o tom da música</li>
+    <li>Adiciona as linhas de acordes começando com um ponto (.) e posicionando os acordes diretamente acima das sílabas correspondentes na linha seguinte:</li>
+</ol>
+
+<div class="example-box">
+<p>[Verso]</p>
+<p>.       C       G        Am      F</p>
 <p>Imagine there is no heaven</p>
 <p>.       C       G        Am      F</p>
 <p>It is easy if you try</p>
-<p>5. Para adicionar acordes isolados, coloca-os entre colchetes, por exemplo: [D]</p>
-<p>6. Para indicar secções, use o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</p>
-<p>7. Toca em "Guardar" para salvar a música</p>
+</div>
+
+<ol start="5">
+    <li>Para adicionar acordes isolados, coloca-os entre colchetes, por exemplo: [D]</li>
+    <li>Para indicar secções, use o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
+    <li>Toca em "Guardar" para salvar a música</li>
+</ol>
 <p>As músicas com letras e acordes são identificadas pelo ícone de letras na lista de músicas e podem ser transpostas da mesma forma que as músicas apenas com acordes.</p>
+</div>
+
+<div class="section">
 <div class="yellow-title">8. IMPORTAÇÃO DE MÚSICAS</div>
 <p>O ChordFlow suporta a importação de músicas em diferentes formatos, permitindo que prepares as tuas músicas num editor de texto e importes todas de uma vez.</p>
-<p>1. No menu principal, seleciona "Importar Músicas"</p>
-<p>2. Escolha o tipo de importação:</p>
-<p>- Formato Compacto (Secções): Para músicas com apenas acordes organizados por secções</p>
-<p>- Formato Multilinha (Letras e Acordes): Para músicas com letras e acordes embutidos</p>
-<p>3. Cola o texto da música no formato adequado</p>
-<p>4. Verifica as instruções de formato no ecrã de importação para garantir que o texto está no formato correto</p>
-<p>5. Toca em "Importar" para adicionar a música ao teu repertório</p>
+<ol>
+    <li>No menu principal, seleciona "Importar Músicas"</li>
+    <li>Escolha o tipo de importação:</li>
+</ol>
+<ul>
+    <li>Formato Compacto (Secções): Para músicas com apenas acordes organizados por secções</li>
+    <li>Formato Multilinha (Letras e Acordes): Para músicas com letras e acordes embutidos</li>
+</ul>
+<ol start="3">
+    <li>Cola o texto da música no formato adequado</li>
+    <li>Verifica as instruções de formato no ecrã de importação para garantir que o texto está no formato correto</li>
+    <li>Toca em "Importar" para adicionar a música ao teu repertório</li>
+</ol>
+
 <p>Dica: Podes preparar várias músicas num editor de texto e importá-las em sequência.</p>
-<p>- Para músicas em formato compacto: basta separá-las por uma quebra de linha (espaço em branco).</p>
-<p>• Exemplo Compacto:</p><p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-<p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
-<p>- Para músicas em formato multilinha: separe-as usando o marcador ===MUSIC_SEPARATOR===.</p>
-<p>• Exemplo Multilinha:</p>
-<p>Hotel California (Dm)</p>
-<p>Eagles</p>
-<p>[Intro]</p>
-<p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-<p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-<p>[Verse]</p>
-<p>.Dm                               A7</p>
-<p>On a dark desert highway, cool wind in my hair</p>
-<p>.C                         G</p>
-<p>Warm smell of colitas rising up through the air</p>
-<p>.A#                             F</p>
-<p>Up ahead in the distance, I saw a shimmering light</p>
-<p>.Gm</p>
-<p>My head grew heavy and my sight grew dim</p>
-<p>.A7</p>
-<p>I had to stop for the night</p>
-<p>.Dm                                           A7</p>
-<p>There she stood in the doorway; I heard the mission bell...</p>
-<p>===MUSIC_SEPARATOR===</p>
-<p>Can't Help Falling in Love (G)</p>
-<p>Elvis Presley</p><p>[Intro]</p>
-<p>.G  D  Em  C  G  D  G</p>
-<p>[Verse 1]</p>
-<p>.G     Bm   Em      C      G      D</p>
-<p>Wise men say, only fools rush in</p>
-<p>.   C  D       Em   C          G     D      G</p>
-<p>But I   can't  help falling in love with you</p>
-<p>.G        Bm Em                 C    G   D</p>
-<p>Shall   I     stay, would it be  a   sin?</p>
-<p>.     C  D      Em   C        G    D     G</p>
-<p>If   I   can't help falling in love with you</p>
-<p>[Chorus]</p>
-<p>.Bm            Gb7    Bm       Gb7</p>
-<p>Like a river flows surely to the sea</p>
-<p>.Bm             Gb7</p>
-<p>Darling so it goes</p>
-<p>.Bm          E7         Am  D</p>
-<p>Some things  are  meant to be</p>
-<p>[Verse 2]</p>
-<p>.G       Bm  Em             C      G    D</p>
-<p>Take my  hand, take my whole life too...</p>
+
+<h4>Exemplos de Formatos:</h4>
+
+<p><strong>Formato Compacto:</strong> Separe as músicas por uma quebra de linha (espaço em branco).</p>
+
+<div class="example-box">
+    <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
+    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
+</div>
+
+<p><strong>Formato Multilinha:</strong> Separe as músicas usando o marcador ===MUSIC_SEPARATOR===.</p>
+
+<div class="example-box">
+    <p>Hotel California (Dm)</p>
+    <p>Eagles</p>
+    <p>[Intro]</p>
+    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+    <p>[Verse]</p>
+    <p>.Dm                               A7</p>
+    <p>On a dark desert highway, cool wind in my hair</p>
+    <p>.C                         G</p>
+    <p>Warm smell of colitas rising up through the air</p>
+    <p>...</p>
+    <p>===MUSIC_SEPARATOR===</p>
+    <p>Can't Help Falling in Love (G)</p>
+    <p>Elvis Presley</p>
+    <p>[Intro]</p>
+    <p>.G  D  Em  C  G  D  G</p>
+    <p>...</p>
+</div>
+
 <p>Isto permite criar um ficheiro com múltiplas músicas e importá-las rapidamente, economizando tempo na criação do teu repertório.</p>
+</div>
+
+<div class="section">
 <div class="yellow-title">9. DICAS E TRUQUES</div>
-<p>• No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a sua necessidade de visualização</p>
-<p>• Configure o seu dispositivo para não entrar em modo de espera durante ensaios ou atuações</p>
-<p>• Usa o gesto de deslizar para alternar rapidamente entre músicas durante uma atuação</p>
-<p>• Organiza as tuas músicas em repertórios temáticos ou baseados em ocasião para encontrá-las facilmente</p>
+<ul>
+    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a sua necessidade de visualização</li>
+    <li>Configure o seu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
+    <li>Usa o gesto de deslizar para alternar rapidamente entre músicas durante uma atuação</li>
+    <li>Organiza as tuas músicas em repertórios temáticos ou baseados em ocasião para encontrá-las facilmente</li>
+</ul>
+</div>
+
+<div class="section">
 <div class="yellow-title">10. EXEMPLOS DE FICHEIROS</div>
+<p>Faz um teste com os nossos exemplos de formatos de música! Descarrega os ficheiros .txt abaixo e experimenta a funcionalidade de importação da app ChordFlow.</p>
 
-  <p style="text-align: left;">Faz um teste com os nossos exemplos de formatos de música! Descarrega os ficheiros .txt abaixo e experimenta a funcionalidade de importação da app ChordFlow.</p>
-   <br>
-    </br>
-  <div style="margin-top: 30px;">
-    <a download="lyrics.txt" href="lyrics.txt"
-       style="padding: 10px 20px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 8px;">
-      Letra + Acordes
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+    <a download="lyrics.txt" href="lyrics.txt" class="back-button">
+        Letra + Acordes
     </a>
-  </div>
-     <br>
-    </br>
-
-  <div style="margin-top: 30px;">
-    <a download="chord_section.txt" href="chord_section.txt"
-       style="padding: 10px 20px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 8px;">
-      Acordes por Secção
+    
+    <a download="chord_section.txt" href="chord_section.txt" class="back-button">
+        Acordes por Secção
     </a>
-  </div>
+</div>
+</div>
 
- <br>
-    </br>
-
-
-
-
-
-
-
-
+<div class="section">
 <div class="yellow-title">11. USAR INTELIGÊNCIA ARTIFICIAL PARA CRIAR FICHEIROS</div>
 
 <p>Podes facilitar a criação dos teus ficheiros utilizando inteligências artificiais como o <strong>ChatGPT</strong>, o <strong>Gemini</strong> ou outras semelhantes.</p>
@@ -185,7 +338,7 @@
 <p>Basta pedir que a IA escreva músicas no formato reconhecido pela aplicação.</p>
 
 <p><strong>Para músicas com letras e acordes:</strong></p>
-<div style="background-color: #081b2a; padding: 1rem; margin: 1rem auto; max-width: 600px; text-align: left; border-radius: 6px; font-family: monospace;">
+<div class="example-box">
 Imagine (C)<br>
 John Lennon<br>
 [Intro]<br>
@@ -200,15 +353,21 @@ It's easy if you try<br>
 </div>
 
 <p><strong>Para músicas com acordes por secções:</strong></p>
-<div style="background-color: #081b2a; padding: 1rem; margin: 1rem auto; max-width: 600px; text-align: left; border-radius: 6px; font-family: monospace;">
+<div class="example-box">
 IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
 </div>
 
 <p>Depois de gerar o ficheiro com várias músicas nesse formato, basta importar na app ChordFlow.</p>
-<br>
-    </br>
-<div style="margin-top: 30px;">
-    <a href="landing.html" style="padding: 10px 20px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 8px;">Voltar à Página Inicial</a>
+
+<div style="margin-top: 30px; text-align: center;">
+    <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
 </div>
 </div>
-</div></body></html>
+
+<footer>
+    <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
+</footer>
+
+</div>
+</body>
+</html>

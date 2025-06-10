@@ -3,124 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChordFlow - App for musicians that simplifies chord and lyrics visualization during performances">
     <title>ChordFlow - App for Musicians</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #FFCC33;
+            --primary-dark: #e6b82e;
+            --bg-color: #0a2537;
+            --bg-light: #112c41;
+            --text-color: #ffffff;
+            --text-light: #dddddd;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 40px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
-            background-color: #0a2537;
-            color: white;
-            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
+            line-height: 1.6;
         }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        header {
+            padding: var(--spacing-md) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: var(--spacing-md);
+        }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
         .hero-image {
             max-width: 95%;
             height: auto;
-            margin: 50px auto 30px;
+            margin: var(--spacing-lg) auto var(--spacing-md);
             display: block;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
+        
         .buttons {
-            margin: 30px 0;
+            margin: var(--spacing-md) 0;
         }
+        
         .button {
             display: inline-block;
             padding: 14px 28px;
-            margin: 10px;
+            margin: var(--spacing-sm);
             font-size: 16px;
             color: #222;
-            background-color: #FFCC33;
+            background-color: var(--primary-color);
             text-decoration: none;
             border-radius: 6px;
-            font-weight: bold;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        
+        .button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
         .button:focus {
             outline: none;
-            box-shadow: none;
+            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        
         .descricao {
             max-width: 800px;
-            margin: 40px auto;
+            margin: var(--spacing-lg) auto;
             text-align: left;
-            padding: 0 20px;
+            padding: 0 var(--spacing-md);
         }
+        
+        .section {
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background-color: var(--bg-light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
         .descricao h2 {
-            color: #FFCC33;
+            color: var(--primary-color);
             font-size: 28px;
-            margin-bottom: 16px;
+            margin-bottom: var(--spacing-md);
             text-align: center;
+            position: relative;
+            padding-bottom: 10px;
         }
+        
+        .descricao h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
         .descricao h3 {
-            color: #FFCC33;
+            color: var(--primary-color);
             font-size: 22px;
-            margin-top: 24px;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
         }
+        
         .descricao p, .descricao ul {
             font-size: 17px;
-            line-height: 1.6;
-            color: #dddddd;
-            margin-bottom: 18px;
+            line-height: 1.7;
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
         }
+        
         .descricao ul {
-            padding-left: 20px;
+            padding-left: var(--spacing-md);
         }
+        
         .descricao ul li {
-            margin-bottom: 10px;
+            margin-bottom: var(--spacing-sm);
         }
+        
         footer {
-            margin-top: 40px;
-            font-size: 14px;
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md) 0;
+            background-color: var(--bg-light);
+            text-align: center;
         }
+        
+        footer p {
+            font-size: 14px;
+            margin-bottom: var(--spacing-sm);
+        }
+        
         footer a {
-            color: #FFCC33;
+            color: var(--primary-color);
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+            
+            header {
+                flex-direction: column;
+                padding: var(--spacing-sm) 0;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+            }
+            
+            nav ul li {
+                margin: 0 var(--spacing-sm);
+            }
+            
+            .hero-image {
+                margin: var(--spacing-md) auto;
+            }
+            
+            .button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+            
+            .descricao h2 {
+                font-size: 24px;
+            }
+            
+            .descricao h3 {
+                font-size: 20px;
+            }
+            
+            .descricao p, .descricao ul {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="logo">ChordFlow</div>
+            <nav>
+                <ul>
+                    <li><a href="guide_chordflow.html">Guide</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
     <img src="landing_page_en.png" alt="ChordFlow apps" class="hero-image">
+    
     <div class="buttons">
         <a href="https://play.google.com/store/apps/details?id=seu.package.id" class="button">View on Google Play</a>
         <a href="https://drive.google.com/file/d/1izp_ezbtUG2bpEyw0PIklrCPfmefW6S6/view?usp=sharing" class="button">Download for Windows</a>
     </div>
+    
     <section class="descricao">
-        <h2>About ChordFlow</h2>
-        <p>ChordFlow is a free and ad-free application created by an amateur musician who needed a quick and simple way to view chord progressions without lyrics. Over time, the app evolved to also support full lyrics with integrated chords, aiming to serve a broader audience — from rehearsals to live performances.</p>
-        <p>As it is developed by just one person, the app may still have some limitations or minor bugs. There are other apps on the market with more advanced features, but they can also be more complex and less practical on stage. ChordFlow aims to be a lightweight, intuitive and essential solution.</p>
-        <p>The Android version is optimized for stage use, rehearsals or studio sessions, presenting chords and sections clearly and accessibly.</p>
-        <p>The Windows version was designed as a creation and editing assistant — ideal for comfortably preparing your setlists on a computer before your concerts. You can organize songs, edit chords and structure sections easily, and then export to the Android app for real use on stage.</p>
-        <h3>Why the Windows version was created</h3>
-        <p>Creating long setlists on a phone or tablet can be slow and impractical — especially with dozens of songs. The Windows version of ChordFlow was created to solve this:</p>
-        <ul>
-            <li>Edit songs and chords more quickly and comfortably</li>
-            <li>Organize setlists using your mouse and keyboard</li>
-            <li>Export easily to the Android app</li>
-        </ul>
-        <p>This way, you prepare everything on your PC and take only the essentials to the stage.</p>
-        <h3>Purpose Summary:</h3>
-        <ul>
-            <li>Create and edit musical setlists with organized sections</li>
-            <li>Manage chords and song structure</li>
-            <li>Use the Windows version as a support tool</li>
-            <li>Use the Android version for live consultation on stage or rehearsal</li>
-        </ul>
-
-        <h2>Quick Guide</h2>
-        <p>Discover the app’s main features and how to make the most of it in just a few steps.</p>
-        <a href="guide_chordflow.html" class="button">Open Full Guide</a>
-
-        <h2>Feedback & Support</h2>
-        <p>If you have suggestions or find any issues, I’d love to hear your feedback.</p>
-        <p>This is a free and ad-free application. If you'd like to support development, all help is appreciated.</p>
-        <div style="margin-top: 20px;">
-            <a class="button" href="mailto:melo.comercial@gmail.com">Send feedback via email</a>
+        <div class="section">
+            <h2>About ChordFlow</h2>
+            <p>ChordFlow is a free and ad-free application created by an amateur musician who needed a quick and simple way to view chord progressions without lyrics. Over time, the app evolved to also support full lyrics with integrated chords, aiming to serve a broader audience — from rehearsals to live performances.</p>
+            <p>As it is developed by just one person, the app may still have some limitations or minor bugs. There are other apps on the market with more advanced features, but they can also be more complex and less practical on stage. ChordFlow aims to be a lightweight, intuitive and essential solution.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Available Versions</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 30px 0;">
+                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+                    <h3>Android</h3>
+                    <p>Optimized for stage use, rehearsals or studio sessions, presenting chords and sections clearly and accessibly.</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+                    <h3>Windows</h3>
+                    <p>Designed as a creation and editing assistant — ideal for comfortably preparing your setlists on a computer before your concerts.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Why the Windows version was created</h3>
+            <p>Creating long setlists on a phone or tablet can be slow and impractical — especially with dozens of songs. The Windows version of ChordFlow was created to solve this:</p>
+            <ul>
+                <li>Edit songs and chords more quickly and comfortably</li>
+                <li>Organize setlists using your mouse and keyboard</li>
+                <li>Export easily to the Android app</li>
+            </ul>
+            <p>This way, you prepare everything on your PC and take only the essentials to the stage.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Purpose Summary:</h3>
+            <ul>
+                <li>Create and edit musical setlists with organized sections</li>
+                <li>Manage chords and song structure</li>
+                <li>Use the Windows version as a support tool</li>
+                <li>Use the Android version for live consultation on stage or rehearsal</li>
+            </ul>
+        </div>
+       
+        <div class="section">
+            <h2>Quick Guide</h2>
+            <p>Discover the app's main features and how to make the most of it in just a few steps.</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="guide_chordflow.html" class="button">Open Full Guide</a>
+            </div>
         </div>
 
-        <h2>Support Development</h2>
-        <p>ChordFlow is free and has no ads. If you enjoy the app and would like to support its development, you can contribute via PayPal. Every bit helps and makes a difference!</p>
-        <a class="button" href="https://www.paypal.me/emanuelmelo10">Support via PayPal</a>
+        <div class="section">
+            <h2>Feedback & Support</h2>
+            <p>If you have suggestions or find any issues, I'd love to hear your feedback.</p>
+            <p>This is a free and ad-free application. If you'd like to support development, all help is appreciated.</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a class="button" href="mailto:melo.comercial@gmail.com">Send feedback via email</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Support Development</h2>
+            <p>ChordFlow is free and has no ads. If you enjoy the app and would like to support its development, you can contribute via PayPal. Every bit helps and makes a difference!</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a class="button" href="https://www.paypal.me/emanuelmelo10">Support via PayPal</a>
+            </div>
+        </div>
     </section>
     <footer>
-        <p><a href="https://chordflow.org/privacy_en.html">Privacy Policy</a></p>
+        <div class="container">
+            <p><a href="https://chordflow.org/privacy_en.html">Privacy Policy</a></p>
+            <p>&copy; 2025 ChordFlow. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
