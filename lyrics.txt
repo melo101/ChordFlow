@@ -1,5 +1,6 @@
 Jolene (C)
 Dolly Parton
+
 [Intro]
 .Am
 [Chorus]
@@ -68,11 +69,11 @@ I'm begging of you, please don't take my man
 Jolene, Jolene, Jolene, Jolene
 .  G                    Em            Am
 Please don't take him even though you can
-
 ===MUSIC_SEPARATOR===
 
-Let It Be 
+Let It Be (G)
 The Beatles
+
 [Intro]
 .G D Em C
 .G D C G
