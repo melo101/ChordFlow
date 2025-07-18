@@ -304,8 +304,8 @@
     <img src="landing_page_pt.png" alt="ChordFlow apps" class="hero-image">
     
     <div class="buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button">Ver na Google Play</a>
-        <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button">Descarregar para Windows</a>
+        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android'});">Ver na Google Play</a>
+        <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows'});">Descarregar para Windows</a>
     </div>
     
     <section class="descricao">
@@ -372,7 +372,7 @@
             <h2>Apoiar o Desenvolvimento</h2>
             <p>O ChordFlow é uma aplicação gratuita e sem anúncios. Se gostas da app e queres apoiar o seu desenvolvimento, podes contribuir via PayPal. Cada apoio, por mais pequeno que seja, é muito bem-vindo e faz a diferença!</p>
             <div style="text-align: center; margin-top: 20px;">
-                <a class="button" href="https://www.paypal.me/emanuelmelo10">Apoiar via PayPal</a>
+                <a class="button" href="https://www.paypal.me/emanuelmelo10" onclick="gtag('event', 'clique_paypal', {'action_type': 'donation'});">Apoiar via PayPal</a>
             </div>
         </div>
     </section>
