@@ -1,145 +1,998 @@
-Jolene (C)
-Dolly Parton
+Hotel California (Bm)
+Eagles
 
 [Intro]
-.Am
+.Bm         F#         A          E          G          D          Em         F#
+.Bm         F#         A          E          G          D          Em         F#
+
+[Verse 1]
+.        Bm                    F#
+On a dark desert highway
+.       A                       E
+Cool wind in my hair
+.     G                   D
+Warm smell of colitas
+.     Em                         F#
+Rising up through the air
+
+.     Bm                           F#
+Up ahead in the distance
+.      A                        E
+I saw a shimmering light
+.    G                                   D
+My head grew heavy and my sight grew dim
+. Em                        F#
+I had to stop for the night
+
+[Verse 2]
+.    Bm                        F#
+There she stood in the doorway
+.  A                        E
+I heard the mission bell
+.    G                                                  D
+And I was thinking to myself
+.            Em                                     F#
+This could be Heaven or this could be Hell
+
+.     Bm                           F#
+Then she lit up a candle
+.    A                              E
+And she showed me the way
+.    G                                      D
+There were voices down the corridor
+.     Em                          F#
+I thought I heard them say
+
 [Chorus]
-.  Am      C       G       Am
-Jolene, Jolene, Jolene, Jolene
-.     G                                  Am
-I'm begging of you, please don't take my man
-.  Am      C       G      Am
-Jolene, Jolene, Jolene, Jolene
-.   G                   Em             Am
-Please don't take him just because you can
-[Verse]
-.       Am        C
-Your beauty is beyond compare
-.       G                Am
-With flaming locks of auburn hair
-.       G             Em              Am
-With ivory skin and eyes of emerald green
-.       Am             C
-Your smile is like a breath of spring
-.       G                  Am
-Your voice is soft like summer rain
-.       G         Em             Am
-And I cannot compete with you, Jolene
-[Verse]
-.    Am             C
-He talks about you in his sleep
-.     G                Am
-There's nothing I can do to keep
-.       G             Em               Am
-From crying when he calls your name, Jolene
-.    Am            C
-And I can easily understand
-.    G                 Am
-How you could easily take my man
-.         G                  Em           Am
-But you don't know what he means to me, Jolene
+.     G                                D
+Welcome to the Hotel California
+.     F#                                                  Bm
+Such a lovely place (such a lovely place)
+.     G                                D
+Such a lovely face
+.  G                                D
+Plenty of room at the Hotel California
+.    Em                                                                          F#
+Any time of year (any time of year) you can find it here
+
+===MUSIC_SEPARATOR===
+
+
+
+Billie Jean (F#m)
+Michael Jackson
+
+[Intro]
+.F#m
+
+[Verse 1]
+.     F#m
+She was more like a beauty queen
+.           G#dim7
+From a movie scene
+.        A
+I said, "Don't mind, but what do you mean
+.           G#dim7
+I am the one
+.          F#m
+Who will dance on the floor in the round?"
+
+.     F#m
+She said I am the one
+.           G#dim7
+Who will dance on the floor in the round
+
+[Verse 2]
+.     F#m
+She told me her name was Billie Jean
+.         G#dim7
+As she caused a scene
+.         A
+Then every head turned with eyes that dreamed
+.          G#dim7
+Of being the one
+.          F#m
+Who will dance on the floor in the round
+
+[Pre-Chorus]
+.     Dmaj7
+People always told me
+.     C#7
+Be careful what you do
+.     Dmaj7
+Don't go around breaking
+.        C#7
+Young girls' hearts
+
 [Chorus]
-.  Am      C       G       Am
-Jolene, Jolene, Jolene, Jolene
-.      G                                 Am
-I'm begging of you, please don't take my man
-.  Am      C        G       Am
-Jolene, Jolene, Jolene, Jolene
-.  G                    Em             Am
-Please don't take him just because you can
-[Verse]
-.Am                    C
-You could have your choice of men
-.    G              Am
-But I could never love again
-.   G           Em           Am
-He's the only one for me, Jolene
-.   Am               C
-I had to have this talk with you
-.    G           Am
-My happiness depends on you
-.        G          Em            Am
-And whatever you decide to do, Jolene
+.     F#m
+Billie Jean is not my lover
+.     Dmaj7
+She's just a girl who claims that I am the one
+.     C#7
+But the kid is not my son
+
+===MUSIC_SEPARATOR===
+
+Wonderwall (Em)
+Oasis
+
+[Intro]
+.Em         G           D           A7sus4
+.Em         G           D           A7sus4
+
+[Verse 1]
+.       Em                     G
+Today is gonna be the day
+.        D                           A7sus4
+That they're gonna throw it back to you
+.       Em                          G
+By now you should've somehow
+.        D                           A7sus4
+Realized what you gotta do
+.     Em             G
+I don't believe that anybody
+.     D                                  A7sus4
+Feels the way I do about you now
+
+[Verse 2]
+.     Em                       G
+Backbeat, the word was on the street
+.         D                                            A7sus4
+That the fire in your heart is out
+.     Em                              G
+I'm sure you've heard it all before
+.         D                                             A7sus4
+But you never really had a doubt
+.     Em             G
+I don't believe that anybody
+.     D                                  A7sus4
+Feels the way I do about you now
+
 [Chorus]
-.  Am      C       G       Am
-Jolene, Jolene, Jolene, Jolene
-.      G                                 Am
-I'm begging of you, please don't take my man
-.  Am      C       G       Am
-Jolene, Jolene, Jolene, Jolene
-.  G                    Em            Am
-Please don't take him even though you can
+.     C                D                     Em
+And all the roads we have to walk are winding
+.     C                D                     Em
+And all the lights that lead us there are blinding
+.     C                D                     G       D/F#    Em
+There are many things that I would like to say to you
+.     A7sus4
+But I don't know how
+
+[Outro]
+.     C        Em         G         Em
+'Cause maybe
+.        C                Em             G             Em
+You're gonna be the one that saves me
+.      C         Em             G         Em
+And after all
+.      C         Em             G
+You're my wonderwall
+
+===MUSIC_SEPARATOR===
+
+Bohemian Rhapsody (Bb)
+Queen
+
+[Intro]
+.Bb         Cm7        F7         Bb         Eb         Bb/D        Cm7       F7
+
+[Verse 1]
+.        Bb                    Cm7               F7               Bb
+Is this the real life? Is this just fantasy?
+.       Eb                   Bb/D              Cm7                 F7
+Caught in a landslide, no escape from reality.
+.      Bb                   Cm7             F7                   Bb
+Open your eyes, look up to the skies and see...
+
+[Chorus]
+.       Gm7              Cm7             F7                  Bb
+I'm just a poor boy, I need no sympathy,
+.       Gm7                Cm7            F7              Bb
+Because I'm easy come, easy go, little high, little low,
+.        Eb                  Ab               Db               Gb
+Any way the wind blows doesn't really matter to me, to me.
+
+[Verse 2]
+.         Bb              Cm7            F7                Bb
+Mama, just killed a man,
+.           Eb               Bb/D              Cm7             F7
+Put a gun against his head, pulled my trigger, now he's dead.
+.      Bb                 Cm7            F7               Bb
+Mama, life had just begun,
+.         Eb                 Bb/D              Cm7            F7
+But now I've gone and thrown it all away.
+
+[Chorus]
+.       Gm7              Cm7              F7                Bb
+Mama, ooh, didn't mean to make you cry,
+.       Gm7             Cm7            F7              Bb
+If I'm not back again this time tomorrow,
+.       Eb                Ab               Db               Gb
+Carry on, carry on as if nothing really matters.
+
+[Bridge]
+.         Bb                 Cm7           F7                 Bb
+Too late, my time has come,
+.          Eb             Bb/D              Cm7           F7
+Sends shivers down my spine, body's aching all the time.
+.        Bb               Cm7            F7                  Bb
+Goodbye, everybody, I've got to go,
+.         Eb                Bb/D              Cm7           F7
+Gotta leave you all behind and face the truth.
+
+[Outro]
+.         Gm7              Cm7           F7               Bb
+Mama, ooh, (any way the wind blows)
+.         Gm7              Cm7             F7             Bb
+I don't want to die,
+.         Eb               Ab               Db               Gb
+I sometimes wish I'd never been born at all.
+
+===MUSIC_SEPARATOR===
+
+Livin' on a Prayer (Em)
+Bon Jovi
+
+[Intro]
+.Em        C          D          Em
+
+[Verse 1]
+.      Em               C               D                Em
+Tommy used to work on the docks,
+.      Em               C               D                Em
+Union's been on strike,
+.      Em               C               D                Em
+He's down on his luck... it's tough, so tough.
+
+[Chorus]
+.         C                D               Em
+Whoa, we're halfway there,
+.         C                D               Em
+Whoa-oh, livin' on a prayer.
+.         C                D               Em
+Take my hand, we'll make it I swear,
+.         C                D               Em
+Whoa-oh, livin' on a prayer.
+
+[Verse 2]
+.      Em               C               D                Em
+Fred's got his six string in hock,
+.      Em               C               D                Em
+Now he's holding in what he used to make it talk,
+.      Em               C               D                Em
+So tough, it's tough.
+
+[Chorus]
+.         C                D               Em
+Whoa, we're halfway there,
+.         C                D               Em
+Whoa-oh, livin' on a prayer.
+.         C                D               Em
+Take my hand, we'll make it I swear,
+.         C                D               Em
+Whoa-oh, livin' on a prayer.
+
+===MUSIC_SEPARATOR===
+
+Smells Like Teen Spirit (F)
+Nirvana
+
+[Intro]
+.F          Bb          Ab           Db
+
+[Verse 1]
+.     F               Bb
+Load up on guns, bring your friends
+.     Ab              Db
+It's fun to lose and to pretend
+.     F               Bb
+She's over-bored and self-assured
+.     Ab              Db
+Oh no, I know a dirty word
+
+[Chorus]
+.       F               Bb
+With the lights out, it's less dangerous
+.       Ab              Db
+Here we are now, entertain us
+.       F               Bb
+I feel stupid and contagious
+.       Ab              Db
+Here we are now, entertain us
+
+[Verse 2]
+.     F               Bb
+A mulatto, an albino, a mosquito, my libido
+.     Ab              Db
+Yeah, hey, yay
+
+[Chorus]
+.       F               Bb
+With the lights out, it's less dangerous
+.       Ab              Db
+Here we are now, entertain us
+.       F               Bb
+I feel stupid and contagious
+.       Ab              Db
+Here we are now, entertain us
+
+[Outro]
+.       F               Bb
+A denial, a denial, a denial, a denial
+
+===MUSIC_SEPARATOR===
+
+Wonderwall (Em)
+Oasis
+
+[Intro]
+.Em         G           D           A7sus4
+.Em         G           D           A7sus4
+
+[Verse 1]
+.       Em                     G
+Today is gonna be the day
+.        D                           A7sus4
+That they're gonna throw it back to you
+.       Em                          G
+By now you should've somehow
+.        D                           A7sus4
+Realized what you gotta do
+.     Em             G
+I don't believe that anybody
+.     D                                  A7sus4
+Feels the way I do about you now
+
+[Verse 2]
+.     Em                       G
+Backbeat, the word was on the street
+.         D                                            A7sus4
+That the fire in your heart is out
+.     Em                              G
+I'm sure you've heard it all before
+.         D                                             A7sus4
+But you never really had a doubt
+.     Em             G
+I don't believe that anybody
+.     D                                  A7sus4
+Feels the way I do about you now
+
+[Chorus]
+.     C                D                     Em
+And all the roads we have to walk are winding
+.     C                D                     Em
+And all the lights that lead us there are blinding
+.     C                D                     G       D/F#    Em
+There are many things that I would like to say to you
+.     A7sus4
+But I don't know how
+
+[Outro]
+.     C        Em         G         Em
+'Cause maybe
+.        C                Em             G             Em
+You're gonna be the one that saves me
+.      C         Em             G         Em
+And after all
+.      C         Em             G
+You're my wonderwall
+
 ===MUSIC_SEPARATOR===
 
 Let It Be (G)
 The Beatles
 
 [Intro]
-.G D Em C
-.G D C G
+.G         D         Em        C
+.G         D         C         G
+
 [Verse 1]
 .              G                      D                          Em                   C
 When I find myself in times of trouble mother Mary comes to me
-.G                                 D                      C    G
+.              G                                 D                      C    G
 Speaking words of wisdom, let it be
 .
 .         G                      D                         Em                         C
 And in my hour of darkness she is standing right in front of me
-.G                                  D                     C    G
+.              G                                  D                     C    G
 Speaking words of wisdom, let it be
+
 [Chorus]
 .          Em         D             C            G
 Let it be, let it be, let it be, let it be
-.G                                 D                    C   G
+.              G                                 D                    C   G
 Whisper words of wisdom, let it be
+
 [Verse 2]
 .           G                            D                         Em                C
 And when the broken-hearted people living in the world agree
-.G                             D                    C    G
+.              G                             D                    C    G
 There will be an answer, let it be
 .            G                                 D                     Em                            C
 For though they may be parted, there is still a chance that they will see
-.G                             D                   C    G
+.              G                             D                   C    G
 There will be an answer, let it be
+
 [Chorus]
 .          Em         D             C            G
 Let it be, let it be, let it be, let it be
-.G                                     D                    C   G
+.              G                                     D                    C   G
 Yeah, there will be an answer, let it be
 .          Em         D             C            G
 Let it be, let it be, let it be, let it be
-.G                                 D                    C   G
+.              G                                 D                    C   G
 Whisper words of wisdom, let it be
+
 [Interlude]
-.C G D C G
-.C G D C G
+.C         G         D         C         G
+.C         G         D         C         G
+
 [Solo]
-.G D Em C
-.G D C G
-.G D Em C
-.G D C G
+.G         D         Em        C
+.G         D         C         G
+.G         D         Em        C
+.G         D         C         G
+
 [Chorus]
 .          Em         D             C                      G
 Let it be, let it be, let it be, yeah, let it be
-.G                                D                      C   G
+.              G                                D                      C   G
 Whisper words of wisdom, let it be
+
 [Verse 3]
 .            G                            D                      Em                       C
 And when the night is cloudy, there is still a light that shines on me
-.G                       D                    C   G
+.              G                       D                    C   G
 Shine until tomorrow, let it be
 .   G                           D                      Em                   C
 I wake up to the sound of music mother Mary comes to me
-.G                                    D                  C  G
+.              G                                    D                  C  G
 Speaking words of wisdom, let it be
+
 [Chorus]
 .          Em         D             C                      G
 Let it be, let it be, let it be, yeah, let it be
-.G                             D                    C   G
+.              G                             D                    C   G
 There will be an answer, let it be
 .          Em         D             C                      G
 Let it be, let it be, let it be, yeah, let it be
-.G                                 D                    C   G
+.              G                                 D                    C   G
 Whisper words of wisdom, let it be
+
 [Coda]
-.C G D C G
+.C         G         D         C         G
+
+===MUSIC_SEPARATOR===
+
+Billie Jean (F#m)
+Michael Jackson
+
+[Intro]
+.F#m
+
+[Verse 1]
+.     F#m
+She was more like a beauty queen
+.           G#dim7
+From a movie scene
+.        A
+I said, "Don't mind, but what do you mean
+.           G#dim7
+I am the one
+.          F#m
+Who will dance on the floor in the round?"
+
+.     F#m
+She said I am the one
+.           G#dim7
+Who will dance on the floor in the round
+
+[Verse 2]
+.     F#m
+She told me her name was Billie Jean
+.         G#dim7
+As she caused a scene
+.         A
+Then every head turned with eyes that dreamed
+.          G#dim7
+Of being the one
+.          F#m
+Who will dance on the floor in the round
+
+[Pre-Chorus]
+.     Dmaj7
+People always told me
+.     C#7
+Be careful what you do
+.     Dmaj7
+Don't go around breaking
+.        C#7
+Young girls' hearts
+
+[Chorus]
+.     F#m
+Billie Jean is not my lover
+.     Dmaj7
+She's just a girl who claims that I am the one
+.     C#7
+But the kid is not my son
+
+===MUSIC_SEPARATOR===
+
+Let's Stay Together (A)
+Al Green
+
+[Intro]
+.A  D  A  E
+
+[Verse 1]
+.        A               D
+I'm, I'm so in love with you
+.        A               E
+Whatever you want to do
+.        A               D
+Is all right with me
+.        A               E
+'Cause you make me feel so brand new
+.        A               D
+And I want to spend my life with you
+
+[Chorus]
+.          A               D
+Let's stay together
+.          A               E
+Loving you whether, whether
+.          A               D
+Times are good or bad, happy or sad
+
+[Verse 2]
+.        A               D
+Whether times are good or bad
+.        A               E
+Happy or sad
+.        A               D
+Whether times are good or bad
+.        A               E
+Happy or sad
+
+===MUSIC_SEPARATOR===
+
+Eye of the Tiger (Cm)
+Survivor
+
+[Intro]
+.Cm  Ab  Eb  Bb
+
+[Verse 1]
+.       Cm                Ab
+Risin' up, back on the street
+.       Eb                Bb
+Did my time, took my chances
+.       Cm               Ab
+Went the distance now I'm back on my feet
+.       Eb                Bb
+Just a man and his will to survive
+
+[Chorus]
+.        Ab               Eb
+So many times it happens so fast
+.        Bb               Cm
+You trade your passion for glory
+.        Ab               Eb
+Don't lose your grip on the dreams of the past
+.        Bb               Cm
+You must fight just to keep them alive
+
+[Verse 2]
+.       Cm                Ab
+Risin' up, straight to the top
+.       Eb                Bb
+Had the guts, got the glory
+.       Cm                 Ab
+Went the distance now I'm not gonna stop
+.       Eb                 Bb
+Just a man and his will to survive
+
+[Bridge]
+.       Ab               Eb
+Face to face, out in the heat
+.       Bb               Cm
+Hangin' tough, stayin' hungry
+.       Ab               Eb
+They stack the odds still we take to the street
+.       Bb               Cm
+For the kill with the skill to survive
+
+[Chorus]
+.        Ab               Eb
+So many times it happens so fast
+.        Bb               Cm
+You trade your passion for glory
+.        Ab               Eb
+Don't lose your grip on the dreams of the past
+.        Bb               Cm
+You must fight just to keep them alive
+
+[Outro]
+.       Cm                Ab
+Risin' up, back on the street
+.       Eb                Bb
+Did my time, took my chances
+.       Cm               Ab
+Went the distance now I'm back on my feet
+.       Eb                Bb
+Just a man and his will to survive
+
+===MUSIC_SEPARATOR===
+
+Sweet Child O' Mine (D)
+Guns N' Roses
+
+[Intro]
+.D  C  G  D  C  G
+
+[Verse 1]
+.      D                 C              G
+She's got a smile that it seems to me
+.     D                 C                G
+Reminds me of childhood memories
+.        D            C           G
+Where everything was as fresh as the bright blue sky
+
+[Chorus]
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+
+[Verse 2]
+.      D                  C                G
+She's got eyes of the bluest skies
+.      D                 C                 G
+As if they thought of rain
+.        D              C                 G
+I hate to look into those eyes
+.         D             C               G
+And see an ounce of pain
+
+[Bridge]
+.       Bm                C
+Her hair reminds me of a warm safe place
+.       G                D
+Where as a child I'd hide
+.       Bm                C
+And pray for the thunder and the rain
+.         G                D
+To quietly pass me by
+
+[Chorus]
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+.      C                  G              D
+Where do we go? Where do we go now?
+
+===MUSIC_SEPARATOR===
+
+Imagine (C)
+John Lennon
+
+[Intro]
+.C  F  C  F
+
+[Verse 1]
+.       C                     F
+Imagine there's no heaven
+.       C                     F
+It's easy if you try
+.       C                       F
+No hell below us
+.       C                      F
+Above us only sky
+
+[Chorus]
+.       F               Am
+Imagine all the people
+.       Dm             G
+Living for today... ah
+
+[Verse 2]
+.       C                      F
+Imagine there's no countries
+.       C                     F
+It isn't hard to do
+.       C                     F
+Nothing to kill or die for
+.       C                  F
+And no religion too
+
+[Chorus]
+.       F               Am
+Imagine all the people
+.       Dm             G
+Living life in peace... you
+
+[Bridge]
+.       F                G
+You may say I'm a dreamer
+.       C                 Am
+But I'm not the only one
+.       F                G
+I hope someday you'll join us
+.       C               F
+And the world will be as one
+
+[Outro]
+.       C              F
+Imagine no possessions
+.       C              F
+I wonder if you can
+.       C               F
+No need for greed or hunger
+.       C                  F
+A brotherhood of man
+
+[Chorus]
+.       F               Am
+Imagine all the people
+.       Dm             G
+Sharing all the world... you
+
+[Outro]
+.       F                G
+You may say I'm a dreamer
+.       C                 Am
+But I'm not the only one
+.       F                G
+I hope someday you'll join us
+.       C               F
+And the world will live as one
+
+
+===MUSIC_SEPARATOR===
+
+Every Breath You Take (G)
+The Police
+
+[Intro]
+.G  Em  C  D
+
+[Verse 1]
+.       G             Em
+Every breath you take
+.       C               D
+Every move you make
+.       G               Em
+Every bond you break
+.       C                D
+Every step you take
+.       G
+I'll be watching you
+
+[Verse 2]
+.       G             Em
+Every single day
+.       C             D
+Every word you say
+.       G               Em
+Every game you play
+.       C               D
+Every night you stay
+.       G
+I'll be watching you
+
+[Chorus]
+.       Bm           Em
+Oh, can't you see
+.       C             D
+You belong to me
+.       Bm              Em
+How my poor heart aches
+.       C                D
+With every step you take
+
+[Bridge]
+.       G               Em
+Every move you make
+.       C              D
+Every vow you break
+.       G                Em
+Every smile you fake
+.       C               D
+Every claim you stake
+.       G
+I'll be watching you
+
+[Outro]
+.       G               Em
+Since you've gone I've been lost without a trace
+.       C              D
+I dream at night, I can only see your face
+.       G               Em
+I look around but it's you I can't replace
+.       C              D               G
+I feel so cold and I long for your embrace
+.       C                 D               G
+I keep crying baby, baby please
+
+===MUSIC_SEPARATOR===
+
+With or Without You (D)
+U2
+
+[Intro]
+.D  A  Bm  G
+
+[Verse 1]
+.       D              A
+See the stone set in your eyes
+.       Bm             G
+See the thorn twist in your side
+.       D              A
+I wait for you
+
+[Verse 2]
+.       D                A
+With or without you
+.       Bm               G
+With or without you
+
+[Chorus]
+.       D             A
+I can't live
+.       Bm             G
+With or without you
+
+[Verse 3]
+.       D               A
+And you give yourself away
+.       Bm                G
+And you give yourself away
+.       D               A
+And you give
+.       Bm               G
+And you give
+.       D               A
+And you give yourself away
+
+[Chorus]
+.       D             A
+I can't live
+.       Bm             G
+With or without you
+
+[Bridge]
+.       D               A
+With or without you
+.       Bm             G
+With or without you
+.       D               A
+I can't live
+.       Bm             G
+With or without you
+
+[Outro]
+.       D              A
+With or without you
+.       Bm             G
+With or without you
+
+===MUSIC_SEPARATOR===
+
+Knockin' on Heaven's Door (G)
+Bob Dylan
+
+[Intro]
+.G  D  Am7  G  D  C
+
+[Verse 1]
+.        G                 D
+Mama, take this badge off of me
+.        Am7                G
+I can't use it anymore
+.        G               D
+It's getting dark, too dark to see
+.        Am7               G
+Feels like I'm knockin' on heaven's door
+
+[Chorus]
+.        G            D
+Knock, knock, knockin' on heaven's door
+.        Am7          G
+Knock, knock, knockin' on heaven's door
+.        G            D
+Knock, knock, knockin' on heaven's door
+.        Am7          G
+Knock, knock, knockin' on heaven's door
+
+[Verse 2]
+.        G                  D
+Mama, put my guns in the ground
+.        Am7                G
+I can't shoot them anymore
+.        G                  D
+That long black cloud is coming down
+.        Am7               G
+Feels like I'm knockin' on heaven's door
+
+[Chorus]
+.        G            D
+Knock, knock, knockin' on heaven's door
+.        Am7          G
+Knock, knock, knockin' on heaven's door
+.        G            D
+Knock, knock, knockin' on heaven's door
+.        Am7          G
+Knock, knock, knockin' on heaven's door
+
+
+===MUSIC_SEPARATOR===
+
+Stand By Me (A)
+Ben E. King
+
+[Intro]
+.A  F#m  D  E
+
+[Verse 1]
+.        A              F#m
+When the night has come
+.        D              E
+And the land is dark
+.        A              F#m
+And the moon is the only light we'll see
+
+[Verse 2]
+.        A              F#m
+No, I won't be afraid
+.        D              E
+Oh, I won't be afraid
+.        A              F#m
+Just as long as you stand, stand by me
+
+[Chorus]
+.        D              E
+So darling, darling
+.        A              F#m
+Stand by me, oh stand by me
+.        D              E
+Oh stand, stand by me
+.        A
+Stand by me
+
+[Verse 3]
+.        A              F#m
+If the sky that we look upon
+.        D              E
+Should tumble and fall
+.        A              F#m
+Or the mountain should crumble to the sea
+
+[Verse 4]
+.        A              F#m
+I won't cry, I won't cry
+.        D              E
+No, I won't shed a tear
+.        A              F#m
+Just as long as you stand, stand by me
+
+[Chorus]
+.        D              E
+And darling, darling
+.        A              F#m
+Stand by me, oh stand by me
+.        D              E
+Oh stand, stand by me
+.        A
+Stand by me
+
+===MUSIC_SEPARATOR===
+
