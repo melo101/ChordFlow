@@ -44,7 +44,7 @@
         }
         
         body {
-            background-color: var(--bg-color);
+            background: radial-gradient(circle at top, #163a55 0%, var(--bg-color) 48%);
             color: var(--text-color);
             font-family: 'Poppins', Arial, sans-serif;
             margin: 0;
@@ -93,16 +93,44 @@
         }
         
         .hero-image {
-            max-width: 95%;
+            width: 100%;
+            max-width: 960px;
             height: auto;
-            margin: var(--spacing-lg) auto var(--spacing-md);
+            margin: var(--spacing-lg) auto 0;
             display: block;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 18px 38px rgba(0, 0, 0, 0.36);
         }
-        
+
+        .hero {
+            padding: 24px 0 18px;
+        }
+
+        .hero-copy {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .hero-title {
+            font-size: clamp(30px, 4.6vw, 52px);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 14px;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            max-width: 760px;
+            margin: 0 auto;
+            color: var(--text-light);
+            font-size: 18px;
+            line-height: 1.65;
+        }
+
         .buttons {
-            margin: var(--spacing-md) 0;
+            margin: 30px 0 8px;
         }
         
         .button {
@@ -117,6 +145,18 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.secondary {
+            color: var(--text-color);
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.34);
+            box-shadow: none;
+        }
+
+        .button.secondary:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.52);
         }
         
         .button:hover {
@@ -136,18 +176,19 @@
         }
         
         .descricao {
-            max-width: 800px;
-            margin: var(--spacing-lg) auto;
+            max-width: 980px;
+            margin: 52px auto;
             text-align: left;
             padding: 0 var(--spacing-md);
         }
-        
+
         .section {
             margin-bottom: var(--spacing-lg);
-            padding: var(--spacing-md);
-            background-color: var(--bg-light);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 28px;
+            background: linear-gradient(180deg, rgba(17, 44, 65, 0.97), rgba(12, 35, 53, 0.97));
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
         }
         
         .descricao h2 {
@@ -190,6 +231,56 @@
         
         .descricao ul li {
             margin-bottom: var(--spacing-sm);
+        }
+
+        .section-intro {
+            max-width: 760px;
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .grid-two {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .feature-card {
+            background-color: rgba(7, 23, 35, 0.52);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .feature-card p {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #0a2537;
+            background-color: var(--primary-color);
+        }
+
+        .final-cta {
+            text-align: center;
+            padding-top: 4px;
         }
         
         footer {
@@ -269,12 +360,28 @@
             .hero-image {
                 margin: var(--spacing-md) auto;
             }
-            
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
             .button {
                 padding: 12px 20px;
                 font-size: 14px;
             }
-            
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .buttons .button {
+                margin: 0;
+                text-align: center;
+            }
+
             .descricao h2 {
                 font-size: 24px;
             }
@@ -285,6 +392,14 @@
             
             .descricao p, .descricao ul {
                 font-size: 16px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .grid-two {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -300,30 +415,38 @@
             </nav>
         </header>
     </div>
-    
-    <img src="landing_page_pt.png" alt="ChordFlow apps" class="hero-image">
-    
-    <div class="buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android'});">Ver na Google Play</a>
-        <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows'});">Descarregar para Windows</a>
-    </div>
+
+    <section class="hero">
+        <div class="container hero-copy">
+            <h1 class="hero-title">ChordFlow: o teu repertório pronto para palco</h1>
+            <p class="hero-subtitle">Organiza músicas, acordes e letras em minutos. Prepara no Windows e leva tudo para o Android em ensaio, estúdio ou atuação ao vivo.</p>
+            <div class="buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android'});">Ver na Google Play</a>
+                <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button secondary" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows'});">Descarregar para Windows</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="landing_page_pt.png" alt="ChordFlow apps" class="hero-image">
+        </div>
+    </section>
     
     <section class="descricao">
         <div class="section">
             <h2>Sobre o ChordFlow</h2>
-            <p>ChordFlow é uma aplicação gratuita e sem anúncios que permite organizar músicas, acordes e letras de forma simples, rápida e prática. Desenvolvida por um músico amador com profissão fora da área tecnológica, a app nasceu de uma necessidade real em palco — e evoluiu com feedback de outros músicos.</p>
+            <p>ChordFlow é uma aplicação gratuita e sem anúncios para organizares músicas, acordes e letras de forma simples e prática. Nasceu de uma necessidade real em palco e tem evoluído com feedback de músicos em contexto de ensaio e atuação.</p>
             <p>Com duas formas de visualização (acordes ou letra completa com acordes), é ideal para ensaios, atuações ao vivo ou estudo individual. A interface é leve, intuitiva e otimizada para funcionar bem em qualquer dispositivo, mesmo sem ligação à internet.</p>
             <p>Como é desenvolvida por uma única pessoa, a aplicação ainda pode ter algumas limitações ou pequenos bugs. Existem outras aplicações no mercado com recursos mais avançados, mas também podem ser mais complexas e menos práticas no palco. O ChordFlow pretende ser uma solução leve, intuitiva e útil para o essencial.</p>
         </div>
         
         <div class="section">
             <h2>Versões Disponíveis</h2>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 30px 0;">
-                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+            <p class="section-intro">Prepara no PC. Leva para o Android. Consulta tudo em palco com rapidez.</p>
+            <div class="grid grid-two">
+                <div class="feature-card">
                     <h3>Android</h3>
                     <p>Otimizada para utilização em palco, ensaios ou estúdio, apresentando os acordes e secções de cada música de forma clara e acessível.</p>
                 </div>
-                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+                <div class="feature-card">
                     <h3>Windows</h3>
                     <p>Pensada como um auxiliar de criação e edição de repertórios — ideal para usares confortavelmente num computador durante a preparação de concertos.</p>
                 </div>
@@ -353,17 +476,33 @@
 
         <div class="section">
             <h2>Novidades da versão 1.2.0</h2>
-            <ul>
-                <li>Importação de músicas reforçada: ficheiro, colagem, link e OCR</li>
-                <li>Importação por link com adaptadores dedicados para Cifra Club e Ultimate Guitar</li>
-                <li>Novo Centro de Backup com backup e restauro completo de repertórios e músicas</li>
-                <li>Seleção de pasta no primeiro backup e opção para alterar a pasta a qualquer momento</li>
-            </ul>
+            <div class="grid grid-two">
+                <article class="feature-card">
+                    <span class="tag">NOVO</span>
+                    <h3>Importação reforçada</h3>
+                    <p>Importa músicas por ficheiro, colagem, link e imagem (OCR), com mais robustez no processamento.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="tag">NOVO</span>
+                    <h3>Fontes online dedicadas</h3>
+                    <p>Importação por link com adaptadores específicos para Cifra Club e Ultimate Guitar.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="tag">NOVO</span>
+                    <h3>Centro de Backup</h3>
+                    <p>Backup e restauro completo de repertórios e músicas para maior segurança dos teus dados.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="tag">NOVO</span>
+                    <h3>Gestão da pasta de backups</h3>
+                    <p>Seleciona a pasta no primeiro backup e altera a localização quando precisares.</p>
+                </article>
+            </div>
         </div>
        
         <div class="section">
             <h2>Guia Rápido</h2>
-            <p>Descobre as funcionalidades principais da app <strong>Android</strong> e como tirares o máximo partido dela em poucos passos.</p>
+            <p>Vê os passos essenciais da app <strong>Android</strong> e começa a usar o ChordFlow com confiança em poucos minutos.</p>
             <div style="text-align: center; margin-top: 20px;">
                 <a href="guia_chordflow.html" class="button">Abrir Guia Completo</a>
             </div>
@@ -384,6 +523,10 @@
             <div style="text-align: center; margin-top: 20px;">
                 <a class="button" href="https://www.paypal.me/emanuelmelo10" onclick="gtag('event', 'clique_paypal', {'action_type': 'donation'});">Apoiar via PayPal</a>
             </div>
+        </div>
+
+        <div class="final-cta">
+            <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play_final', {'app_platform': 'android'});">Instalar ChordFlow no Android</a>
         </div>
     </section>
     <footer>

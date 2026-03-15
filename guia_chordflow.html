@@ -40,16 +40,17 @@
         }
         
         body {
-            background-color: var(--bg-color);
+            background: radial-gradient(circle at top, #163a55 0%, var(--bg-color) 48%);
             color: var(--text-color);
             font-family: 'Poppins', Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
             padding: var(--spacing-md);
         }
         
         .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 980px;
             margin: 0 auto;
             padding: var(--spacing-md);
         }
@@ -73,7 +74,8 @@
             background-color: var(--primary-color);
             color: #222;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -85,10 +87,11 @@
         
         .section {
             margin-bottom: var(--spacing-lg);
-            padding: var(--spacing-md);
-            background-color: var(--bg-light);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 28px;
+            background: linear-gradient(180deg, rgba(17, 44, 65, 0.97), rgba(12, 35, 53, 0.97));
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
         }
         
         .yellow-title {
@@ -98,14 +101,18 @@
             margin-bottom: var(--spacing-md);
             font-size: 1.5rem;
             text-align: left;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 5px;
+            padding-bottom: 6px;
             display: inline-block;
+            border-bottom: 2px solid rgba(255, 204, 51, 0.45);
         }
         
-        h1.yellow-title {
-            font-size: 2rem;
+        .page-title {
+            font-size: clamp(30px, 4.5vw, 44px);
+            line-height: 1.15;
+            text-align: center;
+            color: #ffffff;
             margin-bottom: var(--spacing-lg);
+            text-wrap: balance;
         }
         
         p {
@@ -141,11 +148,19 @@
         }
         
         .example-box {
-            background-color: var(--bg-color);
+            background-color: rgba(6, 20, 30, 0.75);
             padding: var(--spacing-md);
             border-radius: 8px;
             margin: var(--spacing-md) 0;
             overflow-x: auto;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        footer {
+            margin-top: var(--spacing-lg);
+            padding: 14px 0 6px;
+            text-align: center;
+            color: var(--text-light);
         }
         
         @media (max-width: 768px) {
@@ -161,6 +176,15 @@
             .logo {
                 margin-bottom: var(--spacing-sm);
             }
+
+            .section {
+                padding: 22px;
+            }
+
+            .back-button {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -168,14 +192,14 @@
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
+            <a href="landing_pt.html" class="back-button">Voltar à Página Inicial</a>
         </header>
         
-        <h1 class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</h1>
+        <h1 class="page-title">Guia do Utilizador ChordFlow</h1>
         
         <div class="section">
 <div class="yellow-title">1. LISTA DE REPERTÓRIOS</div>
-<p>Este é o ecrã principal que mostra todos os seus repertórios de músicas.</p>
+<p>Este é o ecrã principal que mostra todos os teus repertórios de músicas.</p>
 <ul>
     <li>Ver Repertórios: A lista mostra todos os repertórios criados</li>
     <li>Adicionar Repertório: Toca no botão amarelo com "+" no canto inferior direito</li>
@@ -267,7 +291,7 @@
 
 <ol start="5">
     <li>Para adicionar acordes isolados, coloca-os entre colchetes, por exemplo: [D]</li>
-    <li>Para indicar secções, use o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
+    <li>Para indicar secções, usa o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
     <li>Toca em "Guardar" para salvar a música</li>
 </ol>
 <p>As músicas com letras e acordes são identificadas pelo ícone de letras na lista de músicas e podem ser transpostas da mesma forma que as músicas apenas com acordes.</p>
@@ -318,8 +342,8 @@
 <div class="section">
 <div class="yellow-title">9. DICAS E TRUQUES</div>
 <ul>
-    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a sua necessidade de visualização</li>
-    <li>Configure o seu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
+    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a tua necessidade de visualização</li>
+    <li>Configura o teu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
     <li>Usa o gesto de deslizar para alternar rapidamente entre músicas durante uma atuação</li>
     <li>Organiza as tuas músicas em repertórios temáticos ou baseados em ocasião para encontrá-las facilmente</li>
 </ul>
@@ -392,14 +416,14 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
 <p>Depois de gerar o ficheiro com várias músicas nesse formato, basta importar na app ChordFlow.</p>
 
 <div style="margin-top: 30px; text-align: center;">
-    <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
+    <a href="landing_pt.html" class="back-button">Voltar à Página Inicial</a>
 </div>
 </div>
 
 
 
 <footer>
-    <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
+    <p>&copy; 2026 ChordFlow. Todos os direitos reservados.</p>
 </footer>
 
 </div>
