@@ -275,55 +275,44 @@
 
 <div class="section">
 <div class="yellow-title">8. IMPORTAÇÃO DE MÚSICAS</div>
-<p>O ChordFlow suporta a importação de músicas em diferentes formatos, permitindo que prepares as tuas músicas num editor de texto e importes todas de uma vez.</p>
-<ol>
-    <li>No menu principal, seleciona "Importar Músicas"</li>
-    <li>Escolha o tipo de importação:</li>
-</ol>
+<p>O ChordFlow suporta vários métodos de importação para acelerar a criação do teu repertório:</p>
 <ul>
-    <li>Formato Compacto (Secções): Para músicas com apenas acordes organizados por secções</li>
-    <li>Formato Multilinha (Letras e Acordes): Para músicas com letras e acordes embutidos</li>
+    <li><strong>Ficheiro:</strong> importa músicas a partir de ficheiros .txt com os formatos suportados</li>
+    <li><strong>Colagem:</strong> cola texto diretamente no importador</li>
+    <li><strong>Link:</strong> importa a partir de páginas web compatíveis</li>
+    <li><strong>OCR:</strong> extrai texto de imagens/fotos de cifras</li>
 </ul>
-<ol start="3">
-    <li>Cola o texto da música no formato adequado</li>
-    <li>Verifica as instruções de formato no ecrã de importação para garantir que o texto está no formato correto</li>
-    <li>Toca em "Importar" para adicionar a música ao teu repertório</li>
-</ol>
 
-<p>Dica: Podes preparar várias músicas num editor de texto e importá-las em sequência.</p>
+<p><strong>Importação por link:</strong> o sistema tenta extrair título, artista, tom e conteúdo automaticamente. Atualmente, existem adaptadores dedicados para Cifra Club e Ultimate Guitar, com fallback para outras páginas quando possível.</p>
+<p><strong>Nota:</strong> por depender de sites externos, a compatibilidade pode variar ao longo do tempo.</p>
 
-<h4>Exemplos de Formatos:</h4>
-
-<p><strong>Formato Compacto:</strong> Separe as músicas por uma quebra de linha (espaço em branco).</p>
+<h4>Formatos de texto suportados:</h4>
+<ul>
+    <li><strong>Formato Compacto (Secções):</strong> acordes organizados por secções numa linha</li>
+    <li><strong>Formato Multilinha (Letras e Acordes):</strong> acordes acima da letra, usando ponto (.)</li>
+</ul>
 
 <div class="example-box">
     <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
-</div>
-
-<p><strong>Formato Multilinha:</strong> Separe as músicas usando o marcador ===MUSIC_SEPARATOR===.</p>
-
-<div class="example-box">
+    <p>===MUSIC_SEPARATOR===</p>
     <p>Hotel California (Dm)</p>
     <p>Eagles</p>
-    <p>[Intro]</p>
-    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
     <p>[Verse]</p>
     <p>.Dm                               A7</p>
     <p>On a dark desert highway, cool wind in my hair</p>
-    <p>.C                         G</p>
-    <p>Warm smell of colitas rising up through the air</p>
-    <p>...</p>
-    <p>===MUSIC_SEPARATOR===</p>
-    <p>Can't Help Falling in Love (G)</p>
-    <p>Elvis Presley</p>
-    <p>[Intro]</p>
-    <p>.G  D  Em  C  G  D  G</p>
-    <p>...</p>
 </div>
 
-<p>Isto permite criar um ficheiro com múltiplas músicas e importá-las rapidamente, economizando tempo na criação do teu repertório.</p>
+<h4>Backup e Restauro (Centro de Backup)</h4>
+<p>O ChordFlow inclui um Centro de Backup para guardar e recuperar repertórios e músicas.</p>
+<ol>
+    <li>No ecrã de repertórios, abre o <strong>Centro de Backup</strong></li>
+    <li>Escolhe uma pasta na primeira utilização (fica memorizada para os próximos backups)</li>
+    <li>Cria um backup central em ficheiro JSON</li>
+    <li>Podes alterar a pasta de backup a qualquer momento</li>
+    <li>No restauro, seleciona um ficheiro de backup para recuperar os dados</li>
+</ol>
+
+<p>Dica: faz backups antes de alterações grandes no repertório.</p>
 </div>
 
 <div class="section">
