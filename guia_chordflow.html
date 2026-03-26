@@ -40,17 +40,16 @@
         }
         
         body {
-            background: radial-gradient(circle at top, #163a55 0%, var(--bg-color) 48%);
+            background-color: var(--bg-color);
             color: var(--text-color);
             font-family: 'Poppins', Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
             padding: var(--spacing-md);
         }
         
         .container {
             width: 100%;
-            max-width: 980px;
+            max-width: 900px;
             margin: 0 auto;
             padding: var(--spacing-md);
         }
@@ -74,8 +73,7 @@
             background-color: var(--primary-color);
             color: #222;
             text-decoration: none;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -87,11 +85,10 @@
         
         .section {
             margin-bottom: var(--spacing-lg);
-            padding: 28px;
-            background: linear-gradient(180deg, rgba(17, 44, 65, 0.97), rgba(12, 35, 53, 0.97));
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+            padding: var(--spacing-md);
+            background-color: var(--bg-light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
         .yellow-title {
@@ -101,18 +98,14 @@
             margin-bottom: var(--spacing-md);
             font-size: 1.5rem;
             text-align: left;
-            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
             display: inline-block;
-            border-bottom: 2px solid rgba(255, 204, 51, 0.45);
         }
         
-        .page-title {
-            font-size: clamp(30px, 4.5vw, 44px);
-            line-height: 1.15;
-            text-align: center;
-            color: #ffffff;
+        h1.yellow-title {
+            font-size: 2rem;
             margin-bottom: var(--spacing-lg);
-            text-wrap: balance;
         }
         
         p {
@@ -148,19 +141,11 @@
         }
         
         .example-box {
-            background-color: rgba(6, 20, 30, 0.75);
+            background-color: var(--bg-color);
             padding: var(--spacing-md);
             border-radius: 8px;
             margin: var(--spacing-md) 0;
             overflow-x: auto;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        footer {
-            margin-top: var(--spacing-lg);
-            padding: 14px 0 6px;
-            text-align: center;
-            color: var(--text-light);
         }
         
         @media (max-width: 768px) {
@@ -176,15 +161,6 @@
             .logo {
                 margin-bottom: var(--spacing-sm);
             }
-
-            .section {
-                padding: 22px;
-            }
-
-            .back-button {
-                width: 100%;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -192,14 +168,14 @@
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing_pt.html" class="back-button">Voltar à Página Inicial</a>
+            <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
         </header>
         
-        <h1 class="page-title">Guia do Utilizador ChordFlow</h1>
+        <h1 class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</h1>
         
         <div class="section">
 <div class="yellow-title">1. LISTA DE REPERTÓRIOS</div>
-<p>Este é o ecrã principal que mostra todos os teus repertórios de músicas.</p>
+<p>Este é o ecrã principal que mostra todos os seus repertórios de músicas.</p>
 <ul>
     <li>Ver Repertórios: A lista mostra todos os repertórios criados</li>
     <li>Adicionar Repertório: Toca no botão amarelo com "+" no canto inferior direito</li>
@@ -291,7 +267,7 @@
 
 <ol start="5">
     <li>Para adicionar acordes isolados, coloca-os entre colchetes, por exemplo: [D]</li>
-    <li>Para indicar secções, usa o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
+    <li>Para indicar secções, use o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
     <li>Toca em "Guardar" para salvar a música</li>
 </ol>
 <p>As músicas com letras e acordes são identificadas pelo ícone de letras na lista de músicas e podem ser transpostas da mesma forma que as músicas apenas com acordes.</p>
@@ -299,51 +275,67 @@
 
 <div class="section">
 <div class="yellow-title">8. IMPORTAÇÃO DE MÚSICAS</div>
-<p>O ChordFlow suporta vários métodos de importação para acelerar a criação do teu repertório:</p>
+<p>O ChordFlow suporta importação por ficheiro, colagem de texto, link e OCR por imagem, permitindo preparar músicas em diferentes formatos e revê-las antes de guardar.</p>
+<ol>
+    <li>No menu principal, seleciona "Importar Músicas"</li>
+    <li>Escolhe a origem da importação:</li>
+</ol>
 <ul>
-    <li><strong>Ficheiro:</strong> importa músicas a partir de ficheiros .txt com os formatos suportados</li>
-    <li><strong>Colagem:</strong> cola texto diretamente no importador</li>
-    <li><strong>Link:</strong> importa a partir de páginas web compatíveis</li>
-    <li><strong>OCR:</strong> extrai texto de imagens/fotos de cifras</li>
+    <li>Importar ficheiro</li>
+    <li>Colar cifra</li>
+    <li>Importar de link</li>
+    <li>Importar por imagem (OCR)</li>
 </ul>
+<ol start="3">
+    <li>Na importação por ficheiro, podes selecionar TXT ou PDF</li>
+    <li>O PDF tenta extrair o texto automaticamente e, se for uma digitalização ou imagem, a app usa OCR como alternativa</li>
+    <li>Para importação por link, as fontes mais fiáveis são Cifra Club e Ultimate Guitar</li>
+    <li>Revê a pré-visualização e ajusta título, artista, tom e conteúdo antes de guardar</li>
+</ol>
 
-<p><strong>Importação por link:</strong> o sistema tenta extrair título, artista, tom e conteúdo automaticamente. Atualmente, existem adaptadores dedicados para Cifra Club e Ultimate Guitar, com fallback para outras páginas quando possível.</p>
-<p><strong>Nota:</strong> por depender de sites externos, a compatibilidade pode variar ao longo do tempo.</p>
+<p>Dica: Podes preparar várias músicas num editor de texto e importá-las em sequência.</p>
 
-<h4>Formatos de texto suportados:</h4>
-<ul>
-    <li><strong>Formato Compacto (Secções):</strong> acordes organizados por secções numa linha</li>
-    <li><strong>Formato Multilinha (Letras e Acordes):</strong> acordes acima da letra, usando ponto (.)</li>
-</ul>
+<h4>Exemplos de Formatos:</h4>
+
+<p><strong>TXT em Formato Compacto:</strong> Separe as músicas por uma quebra de linha (espaço em branco).</p>
 
 <div class="example-box">
     <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-    <p>===MUSIC_SEPARATOR===</p>
+    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
+</div>
+
+<p><strong>TXT em Formato Multilinha:</strong> Separe as músicas usando o marcador ===MUSIC_SEPARATOR===.</p>
+
+<div class="example-box">
     <p>Hotel California (Dm)</p>
     <p>Eagles</p>
+    <p>[Intro]</p>
+    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
     <p>[Verse]</p>
     <p>.Dm                               A7</p>
     <p>On a dark desert highway, cool wind in my hair</p>
+    <p>.C                         G</p>
+    <p>Warm smell of colitas rising up through the air</p>
+    <p>...</p>
+    <p>===MUSIC_SEPARATOR===</p>
+    <p>Can't Help Falling in Love (G)</p>
+    <p>Elvis Presley</p>
+    <p>[Intro]</p>
+    <p>.G  D  Em  C  G  D  G</p>
+    <p>...</p>
 </div>
 
-<h4>Backup e Restauro (Centro de Backup)</h4>
-<p>O ChordFlow inclui um Centro de Backup para guardar e recuperar repertórios e músicas.</p>
-<ol>
-    <li>No ecrã de repertórios, abre o <strong>Centro de Backup</strong></li>
-    <li>Escolhe uma pasta na primeira utilização (fica memorizada para os próximos backups)</li>
-    <li>Cria um backup central em ficheiro JSON</li>
-    <li>Podes alterar a pasta de backup a qualquer momento</li>
-    <li>No restauro, seleciona um ficheiro de backup para recuperar os dados</li>
-</ol>
+<p><strong>PDF:</strong> Funciona com ficheiros que já têm texto e também com PDFs digitalizados convertidos por OCR.</p>
 
-<p>Dica: faz backups antes de alterações grandes no repertório.</p>
+<p>Isto permite criar ou reunir músicas em vários formatos e importá-las rapidamente para o teu repertório.</p>
 </div>
 
 <div class="section">
 <div class="yellow-title">9. DICAS E TRUQUES</div>
 <ul>
-    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a tua necessidade de visualização</li>
-    <li>Configura o teu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
+    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a sua necessidade de visualização</li>
+    <li>Configure o seu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
     <li>Usa o gesto de deslizar para alternar rapidamente entre músicas durante uma atuação</li>
     <li>Organiza as tuas músicas em repertórios temáticos ou baseados em ocasião para encontrá-las facilmente</li>
 </ul>
@@ -416,14 +408,14 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
 <p>Depois de gerar o ficheiro com várias músicas nesse formato, basta importar na app ChordFlow.</p>
 
 <div style="margin-top: 30px; text-align: center;">
-    <a href="landing_pt.html" class="back-button">Voltar à Página Inicial</a>
+    <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
 </div>
 </div>
 
 
 
 <footer>
-    <p>&copy; 2026 ChordFlow. Todos os direitos reservados.</p>
+    <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
 </footer>
 
 </div>

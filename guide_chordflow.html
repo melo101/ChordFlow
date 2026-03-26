@@ -39,17 +39,16 @@
         }
         
         body {
-            background: radial-gradient(circle at top, #163a55 0%, var(--bg-color) 48%);
+            background-color: var(--bg-color);
             color: var(--text-color);
             font-family: 'Poppins', Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
             padding: var(--spacing-md);
         }
         
         .container {
             width: 100%;
-            max-width: 980px;
+            max-width: 900px;
             margin: 0 auto;
             padding: var(--spacing-md);
         }
@@ -73,8 +72,7 @@
             background-color: var(--primary-color);
             color: #222;
             text-decoration: none;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -86,11 +84,10 @@
         
         .section {
             margin-bottom: var(--spacing-lg);
-            padding: 28px;
-            background: linear-gradient(180deg, rgba(17, 44, 65, 0.97), rgba(12, 35, 53, 0.97));
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+            padding: var(--spacing-md);
+            background-color: var(--bg-light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
         .yellow-title {
@@ -100,18 +97,14 @@
             margin-bottom: var(--spacing-md);
             font-size: 1.5rem;
             text-align: left;
-            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
             display: inline-block;
-            border-bottom: 2px solid rgba(255, 204, 51, 0.45);
         }
         
-        .page-title {
-            font-size: clamp(30px, 4.5vw, 44px);
-            line-height: 1.15;
-            text-align: center;
-            color: #ffffff;
+        h1.yellow-title {
+            font-size: 2rem;
             margin-bottom: var(--spacing-lg);
-            text-wrap: balance;
         }
         
         p {
@@ -147,19 +140,11 @@
         }
         
         .example-box {
-            background-color: rgba(6, 20, 30, 0.75);
+            background-color: var(--bg-color);
             padding: var(--spacing-md);
             border-radius: 8px;
             margin: var(--spacing-md) 0;
             overflow-x: auto;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        footer {
-            margin-top: var(--spacing-lg);
-            padding: 14px 0 6px;
-            text-align: center;
-            color: var(--text-light);
         }
         
         @media (max-width: 768px) {
@@ -175,15 +160,6 @@
             .logo {
                 margin-bottom: var(--spacing-sm);
             }
-
-            .section {
-                padding: 22px;
-            }
-
-            .back-button {
-                width: 100%;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -191,10 +167,10 @@
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing_en.html" class="back-button">Back to Home Page</a>
+            <a href="landing.html" class="back-button">Back to Home Page</a>
         </header>
         
-        <h1 class="page-title">User Guide ChordFlow</h1>
+        <h1 class="yellow-title">USER GUIDE – CHORDFLOW</h1>
         
         <div class="section">
             <div class="yellow-title">1. INTRODUCTION</div>
@@ -304,44 +280,55 @@
 
 <div class="section">
 <div class="yellow-title">10. IMPORTING SONGS</div>
-<p>ChordFlow supports multiple import methods to speed up setlist creation:</p>
+<p>ChordFlow supports importing songs from files, pasted text, links, and image OCR, with a preview before saving.</p>
+<ol>
+    <li>In the main menu, select "Import Songs"</li>
+    <li>Choose the import source:</li>
+</ol>
 <ul>
-    <li><strong>File:</strong> import songs from .txt files in supported formats</li>
-    <li><strong>Paste:</strong> paste song text directly into the importer</li>
-    <li><strong>Link:</strong> import from compatible web pages</li>
-    <li><strong>OCR:</strong> extract lyrics/chords from images or photos</li>
+    <li>Import file</li>
+    <li>Paste chord sheet</li>
+    <li>Import from link</li>
+    <li>Import from image (OCR)</li>
 </ul>
+<ol start="3">
+    <li>When importing a file, you can choose TXT or PDF</li>
+    <li>PDF files try text extraction first, and scanned/image PDFs fall back to OCR</li>
+    <li>For link imports, the most reliable sources are Cifra Club and Ultimate Guitar</li>
+    <li>Review the preview and adjust title, artist, key, and content before saving</li>
+</ol>
 
-<p><strong>Link import:</strong> ChordFlow tries to extract title, artist, key, and song content automatically. Dedicated adapters are available for Cifra Club and Ultimate Guitar, with fallback handling for other websites when possible.</p>
-<p><strong>Note:</strong> because this depends on third-party websites, compatibility may change over time.</p>
+<p>Tip: You can prepare multiple songs in a text editor and import them all together.</p>
 
-<h4>Supported text formats:</h4>
-<ul>
-    <li><strong>Compact format (Sections):</strong> chords grouped by section in one line</li>
-    <li><strong>Multiline format (Lyrics + Chords):</strong> chord lines above lyrics using dot prefix (.)</li>
-</ul>
+<h4>Examples of Formats:</h4>
+
+<p><strong>TXT Compact Format:</strong> Separate songs with a line break (blank space).</p>
 
 <div class="example-box">
     <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-    <p>===MUSIC_SEPARATOR===</p>
-    <p>Hotel California (Dm)</p>
-    <p>Eagles</p>
-    <p>[Verse]</p>
-    <p>.Dm                               A7</p>
-    <p>On a dark desert highway, cool wind in my hair</p>
+    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
 </div>
 
-<h4>Backup & Restore (Backup Center)</h4>
-<p>ChordFlow includes a Backup Center to save and restore all your setlists and songs.</p>
-<ol>
-    <li>Open <strong>Backup Center</strong> from the setlists screen</li>
-    <li>Select a folder on first use (it will be reused automatically)</li>
-    <li>Create a central JSON backup file</li>
-    <li>Change backup folder anytime if needed</li>
-    <li>Restore from a backup file to recover data</li>
-</ol>
+<p><strong>TXT Multiline Format:</strong> Separate songs using the marker ===MUSIC_SEPARATOR===.</p>
 
-<p>Tip: create a backup before large edits in your repertoire.</p>
+<div class="example-box">
+    <p>Hotel California (Dm)</p>
+    <p>Eagles</p>
+    <p>[Intro]</p>
+    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+    <p>[Verse]</p>
+    <p>.Dm                 A7</p>
+    <p>On a dark desert highway...</p>
+    <p>...</p>
+    <p>===MUSIC_SEPARATOR===</p>
+    <p>Can't Help Falling in Love (G)</p>
+    <p>Elvis Presley</p>
+    <p>[Intro]</p>
+    <p>.G  D  Em  C  G  D  G</p>
+    <p>...</p>
+</div>
+
+<p><strong>PDF:</strong> Works with selectable-text PDFs and scanned PDFs converted through OCR.</p>
 </div>
 
 <div class="section">
@@ -419,14 +406,15 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
 <p>After generating the file, import it directly into ChordFlow.</p>
 
 <div style="margin-top: 30px; text-align: center;">
-    <a href="landing_en.html" class="back-button">Back to Home Page</a>
+    <a href="landing.html" class="back-button">Back to Home Page</a>
 </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 ChordFlow. All rights reserved.</p>
+    <p>&copy; 2025 ChordFlow. All rights reserved.</p>
 </footer>
 
+</div>
 </div>
 </body>
 </html>
