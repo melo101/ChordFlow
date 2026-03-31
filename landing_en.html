@@ -1,508 +1,786 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ChordFlow - App for musicians that simplifies chord and lyrics visualization during performances">
-    <title>ChordFlow - App for Musicians</title>
+
+    <meta name="description" content="ChordFlow is an app for musicians to organize setlists, view chords and lyrics, transpose songs, and prepare rehearsals or live performances on Android and Windows.">
+
+    <title>ChordFlow App for Musicians | Setlists, Chords, Lyrics, Transpose</title>
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0a2537">
+    <link rel="canonical" href="https://chordflow.org/landing_en.html">
+    <link rel="alternate" hreflang="en" href="https://chordflow.org/landing_en.html">
+    <link rel="alternate" hreflang="pt" href="https://chordflow.org/landing_pt.html">
+    <link rel="alternate" hreflang="x-default" href="https://chordflow.org/landing.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ChordFlow">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="ChordFlow App for Musicians">
+    <meta property="og:description" content="Organize setlists, view chords and lyrics, transpose songs, and prepare live performances with ChordFlow.">
+    <meta property="og:url" content="https://chordflow.org/landing_en.html">
+    <meta property="og:image" content="https://chordflow.org/landing_page_en.png">
+    <meta property="og:image:alt" content="ChordFlow app screenshots on Android and Windows">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ChordFlow App for Musicians">
+    <meta name="twitter:description" content="Setlists, chords, lyrics, transpose, Android and Windows support for musicians.">
+    <meta name="twitter:image" content="https://chordflow.org/landing_page_en.png">
+
     <!-- Favicon em múltiplos formatos para melhor compatibilidade -->
+
     <link rel="icon" type="image/x-icon" href="icone_chordflow.ico">
+
     <link rel="shortcut icon" type="image/x-icon" href="icone_chordflow.ico">
+
     <link rel="icon" type="image/png" sizes="16x16" href="icone_chordflow-16x16.png">
+
     <link rel="icon" type="image/png" sizes="32x32" href="icone_chordflow-32x32.png">
+
     <link rel="apple-touch-icon" sizes="180x180" href="icone_chordflow-180x180.png">
+
     <meta name="msapplication-TileImage" content="icone_chordflow-144x144.png">
+
     
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Google tag (gtag.js) -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETTZ8V04M"></script>
+
     <script>
+
       window.dataLayer = window.dataLayer || [];
+
       function gtag(){dataLayer.push(arguments);}
+
       gtag('js', new Date());
 
+
+
       gtag('config', 'G-QETTZ8V04M');
+
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ChordFlow",
+      "applicationCategory": "MusicApplication",
+      "operatingSystem": "Android, Windows",
+      "inLanguage": "en",
+      "url": "https://chordflow.org/landing_en.html",
+      "description": "ChordFlow helps musicians organize setlists, view chords and lyrics, and transpose songs for rehearsals and live performance.",
+      "image": "https://chordflow.org/landing_page_en.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
     </script>
     <style>
+
         :root {
+
             --primary-color: #FFCC33;
+
             --primary-dark: #e6b82e;
+
             --bg-color: #0a2537;
+
             --bg-light: #112c41;
+
             --text-color: #ffffff;
+
             --text-light: #dddddd;
+
             --spacing-sm: 10px;
+
             --spacing-md: 20px;
+
             --spacing-lg: 40px;
-        }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            background: radial-gradient(circle at top, #163a55 0%, var(--bg-color) 48%);
-            color: var(--text-color);
-            font-family: 'Poppins', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-md);
-        }
-        
-        header {
-            padding: var(--spacing-md) 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: var(--spacing-md);
-        }
-        
-        nav ul li a {
-            color: var(--text-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-        
-        .hero-image {
-            width: 100%;
-            max-width: 960px;
-            height: auto;
-            margin: var(--spacing-lg) auto 0;
-            display: block;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 18px 38px rgba(0, 0, 0, 0.36);
+
         }
 
-        .hero {
-            padding: 24px 0 18px;
+        
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        
+
+        body {
+
+            background-color: var(--bg-color);
+
+            color: var(--text-color);
+
+            font-family: 'Poppins', Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            text-align: center;
+
+            line-height: 1.6;
+
+        }
+
+        
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 var(--spacing-md);
+
+        }
+
+        
+
+        header {
+
+            padding: var(--spacing-md) 0;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        
+
+        .logo {
+
+            font-size: 24px;
+
+            font-weight: 700;
+
+            color: var(--primary-color);
+
+        }
+
+        
+
+        nav ul {
+
+            display: flex;
+
+            list-style: none;
+
+        }
+
+        
+
+        nav ul li {
+
+            margin-left: var(--spacing-md);
+
+        }
+
+        
+
+        nav ul li a {
+
+            color: var(--text-color);
+
+            text-decoration: none;
+
+            transition: color 0.3s ease;
+
+        }
+
+        
+
+        nav ul li a:hover {
+
+            color: var(--primary-color);
+
+        }
+
+        
+
+        .hero-image {
+
+            max-width: 95%;
+
+            height: auto;
+
+            margin: var(--spacing-lg) auto var(--spacing-md);
+
+            display: block;
+
+            border-radius: 10px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+
+        .buttons {
+
+            margin: var(--spacing-md) 0;
+
+        }
+
+        
+
+        .button {
+
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            margin: var(--spacing-sm);
+
+            font-size: 16px;
+
+            color: #222;
+
+            background-color: var(--primary-color);
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-weight: 600;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .button:hover {
+
+            background-color: var(--primary-dark);
+
+            transform: translateY(-2px);
+
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+
+        }
+
+        
+
+        .button:active {
+
+            transform: translateY(0);
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .button:focus {
+
+            outline: none;
+
+            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .descricao {
+
+            max-width: 800px;
+
+            margin: var(--spacing-lg) auto;
+
+            text-align: left;
+
+            padding: 0 var(--spacing-md);
+
         }
 
         .hero-copy {
-            max-width: 860px;
-            margin: 0 auto;
+
+            max-width: 900px;
+
+            margin: 0 auto var(--spacing-md);
+
             padding: 0 var(--spacing-md);
+
         }
 
-        .hero-title {
-            font-size: clamp(30px, 4.6vw, 52px);
-            font-weight: 700;
-            line-height: 1.15;
-            margin-bottom: 14px;
-            color: #ffffff;
+        .hero-copy h1 {
+
+            color: var(--primary-color);
+
+            font-size: 2.4rem;
+
+            margin-bottom: 12px;
+
         }
 
-        .hero-subtitle {
-            max-width: 760px;
-            margin: 0 auto;
+        .hero-copy p {
+
             color: var(--text-light);
-            font-size: 18px;
-            line-height: 1.65;
+
+            font-size: 1.1rem;
+
+            margin: 0 auto;
+
+            max-width: 760px;
+
         }
 
-        .buttons {
-            margin: 30px 0 8px;
-        }
         
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            margin: var(--spacing-sm);
-            font-size: 16px;
-            color: #222;
-            background-color: var(--primary-color);
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .button.secondary {
-            color: var(--text-color);
-            background-color: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.34);
-            box-shadow: none;
-        }
-
-        .button.secondary:hover {
-            background-color: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.52);
-        }
-        
-        .button:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        
-        .button:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .button:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .descricao {
-            max-width: 980px;
-            margin: 52px auto;
-            text-align: left;
-            padding: 0 var(--spacing-md);
-        }
 
         .section {
+
             margin-bottom: var(--spacing-lg);
-            padding: 28px;
-            background: linear-gradient(180deg, rgba(17, 44, 65, 0.97), rgba(12, 35, 53, 0.97));
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
-        }
-        
-        .descricao h2 {
-            color: var(--primary-color);
-            font-size: 28px;
-            margin-bottom: var(--spacing-md);
-            text-align: center;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .descricao h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-        
-        .descricao h3 {
-            color: var(--primary-color);
-            font-size: 22px;
-            margin-top: var(--spacing-md);
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        .descricao p, .descricao ul {
-            font-size: 17px;
-            line-height: 1.7;
-            color: var(--text-light);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .descricao ul {
-            padding-left: var(--spacing-md);
-        }
-        
-        .descricao ul li {
-            margin-bottom: var(--spacing-sm);
-        }
 
-        .section-intro {
-            max-width: 760px;
-            margin: 0 auto var(--spacing-md);
-            text-align: center;
-        }
+            padding: var(--spacing-md);
 
-        .grid {
-            display: grid;
-            gap: 18px;
-        }
-
-        .grid-two {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .feature-card {
-            background-color: rgba(7, 23, 35, 0.52);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 18px;
-        }
-
-        .feature-card h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 20px;
-        }
-
-        .feature-card p {
-            margin-bottom: 0;
-            font-size: 16px;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-bottom: 10px;
-            padding: 4px 10px;
-            border-radius: 999px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            color: #0a2537;
-            background-color: var(--primary-color);
-        }
-
-        .final-cta {
-            text-align: center;
-            padding-top: 4px;
-        }
-        
-        footer {
-            margin-top: var(--spacing-lg);
-            padding: var(--spacing-md) 0;
             background-color: var(--bg-light);
-            text-align: center;
+
+            border-radius: 10px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
         }
+
         
-        footer p {
-            font-size: 14px;
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        footer a {
+
+        .descricao h2 {
+
             color: var(--primary-color);
+
+            font-size: 28px;
+
+            margin-bottom: var(--spacing-md);
+
+            text-align: center;
+
+            position: relative;
+
+            padding-bottom: 10px;
+
+        }
+
+        
+
+        .descricao h2::after {
+
+            content: '';
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 60px;
+
+            height: 3px;
+
+            background-color: var(--primary-color);
+
+        }
+
+        
+
+        .descricao h3 {
+
+            color: var(--primary-color);
+
+            font-size: 22px;
+
+            margin-top: var(--spacing-md);
+
+            margin-bottom: var(--spacing-sm);
+
+        }
+
+        
+
+        .descricao p, .descricao ul {
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            color: var(--text-light);
+
+            margin-bottom: var(--spacing-md);
+
+        }
+
+        
+
+        .descricao ul {
+
+            padding-left: var(--spacing-md);
+
+        }
+
+        
+
+        .descricao ul li {
+
+            margin-bottom: var(--spacing-sm);
+
+        }
+
+        
+
+        footer {
+
+            margin-top: var(--spacing-lg);
+
+            padding: var(--spacing-md) 0;
+
+            background-color: var(--bg-light);
+
+            text-align: center;
+
+        }
+
+        
+
+        footer p {
+
+            font-size: 14px;
+
+            margin-bottom: var(--spacing-sm);
+
+        }
+
+        
+
+        footer a {
+
+            color: var(--primary-color);
+
             text-decoration: none;
+
             transition: color 0.3s ease;
+
         }
+
         
+
         footer a:hover {
+
             color: var(--primary-dark);
+
             text-decoration: underline;
+
         }
+
         
+
         /* Responsividade */
+
         @media (max-width: 768px) {
+
             .container {
+
                 padding: 0 var(--spacing-sm);
+
             }
+
             
+
             header {
+
                 flex-direction: column;
+
                 padding: var(--spacing-sm) 0;
+
             }
+
             
+
             nav ul {
+
                 margin-top: var(--spacing-sm);
+
             }
+
             
+
             nav ul li {
+
                 margin: 0 var(--spacing-sm);
+
             }
+
             
+
             .hero-image {
+
                 margin: var(--spacing-md) auto;
+
             }
 
-            .hero-subtitle {
-                font-size: 16px;
-            }
             
+
             .button {
+
                 padding: 12px 20px;
+
                 font-size: 14px;
+
             }
 
-            .buttons {
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 10px;
-            }
-
-            .buttons .button {
-                margin: 0;
-                text-align: center;
-            }
             
+
             .descricao h2 {
+
                 font-size: 24px;
+
             }
+
             
+
             .descricao h3 {
+
                 font-size: 20px;
+
             }
+
             
+
             .descricao p, .descricao ul {
+
                 font-size: 16px;
+
             }
 
-            .section {
-                padding: 22px;
-            }
-
-            .grid-two {
-                grid-template-columns: 1fr;
-            }
         }
+
     </style>
+
 </head>
+
 <body>
+
     <div class="container">
+
         <header>
+
             <div class="logo">ChordFlow</div>
+
             <nav>
+
                 <ul>
+
                     <li><a href="guide_chordflow.html">Guide</a></li>
+
                 </ul>
+
             </nav>
+
         </header>
+
     </div>
 
-    <section class="hero">
-        <div class="container hero-copy">
-            <h1 class="hero-title">ChordFlow: your setlist ready for the stage</h1>
-            <p class="hero-subtitle">Organize songs, chords and lyrics in minutes. Prepare everything on Windows and take it to Android for rehearsals and live performance.</p>
-            <div class="buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android', 'language': 'en'});">View on Google Play</a>
-                <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button secondary" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows', 'language': 'en'});">Download for Windows</a>
-            </div>
-        </div>
-        <div class="container">
-            <img src="landing_page_en.png" alt="ChordFlow apps" class="hero-image">
-        </div>
-    </section>
     
+
+    <div class="hero-copy">
+
+        <h1>ChordFlow for Musicians</h1>
+
+        <p>Organize setlists, read chords and lyrics, transpose songs, and prepare rehearsals or live performances on Android and Windows.</p>
+
+    </div>
+
+    <img src="landing_page_en.png" alt="ChordFlow screenshots showing setlists, chords, lyrics, and app tools" class="hero-image">
+
+    
+
+    <div class="buttons">
+
+        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android', 'language': 'en'});">View on Google Play</a>
+
+        <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows', 'language': 'en'});">Download for Windows</a>
+
+    </div>
+
+    
+
     <section class="descricao">
+
         <div class="section">
+
             <h2>About ChordFlow</h2>
-            <p>ChordFlow is a free, ad-free app built to organize songs, chords and lyrics in a simple and practical way. It was born from a real stage need and keeps improving with feedback from active musicians.</p>
+
+            <p>ChordFlow is a free and ad-free application that allows you to organize songs, chords, and lyrics in a simple, quick, and practical way. Developed by an amateur musician with a profession outside the technology field, the app was born from a real need on stage — and evolved with feedback from other musicians.</p>
+
             <p>With two viewing modes (chords or complete lyrics with chords), it's ideal for rehearsals, live performances, or individual study. The interface is lightweight, intuitive, and optimized to work well on any device, even without an internet connection.</p>
+
             <p>As it is developed by just one person, the app may still have some limitations or minor bugs. There are other apps on the market with more advanced features, but they can also be more complex and less practical on stage. ChordFlow aims to be a lightweight, intuitive and essential solution.</p>
+
         </div>
+
         
+
         <div class="section">
+
             <h2>Available Versions</h2>
-            <p class="section-intro">Prepare on PC. Take it to Android. Access everything fast on stage.</p>
-            <div class="grid grid-two">
-                <div class="feature-card">
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 30px 0;">
+
+                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+
                     <h3>Android</h3>
+
                     <p>Optimized for stage use, rehearsals or studio sessions, presenting chords and sections clearly and accessibly.</p>
+
                 </div>
-                <div class="feature-card">
+
+                <div style="flex: 1; min-width: 250px; padding: 15px; margin-bottom: 20px;">
+
                     <h3>Windows</h3>
+
                     <p>Designed as a creation and editing assistant — ideal for comfortably preparing your setlists on a computer before your concerts.</p>
+
                 </div>
+
             </div>
+
         </div>
+
         
+
         <div class="section">
+
             <h3>Why the Windows version was created</h3>
+
             <p>Creating long setlists on a phone or tablet can be slow and impractical — especially with dozens of songs. The Windows version of ChordFlow was created to solve this:</p>
+
             <ul>
+
                 <li>Edit songs and chords more quickly and comfortably</li>
+
                 <li>Organize setlists using your mouse and keyboard</li>
+
                 <li>Export easily to the Android app</li>
+
             </ul>
+
             <p>This way, you prepare everything on your PC and take only the essentials to the stage.</p>
+
         </div>
+
         
+
         <div class="section">
+
             <h3>Purpose Summary:</h3>
+
             <ul>
+
                 <li>Create and edit musical setlists with organized sections</li>
+
                 <li>Manage chords and song structure</li>
+
                 <li>Use the Windows version as a support tool</li>
+
                 <li>Use the Android version for live consultation on stage or rehearsal</li>
+
             </ul>
+
         </div>
 
-        <div class="section">
-            <h2>What's new in version 1.2.0</h2>
-            <div class="grid grid-two">
-                <article class="feature-card">
-                    <span class="tag">NEW</span>
-                    <h3>Improved import</h3>
-                    <p>Import songs from file, paste, link, and image (OCR) with better reliability.</p>
-                </article>
-                <article class="feature-card">
-                    <span class="tag">NEW</span>
-                    <h3>Dedicated online sources</h3>
-                    <p>Link import now includes dedicated adapters for Cifra Club and Ultimate Guitar.</p>
-                </article>
-                <article class="feature-card">
-                    <span class="tag">NEW</span>
-                    <h3>Backup Center</h3>
-                    <p>Full backup and restore of setlists and songs for better data safety.</p>
-                </article>
-                <article class="feature-card">
-                    <span class="tag">NEW</span>
-                    <h3>Backup folder management</h3>
-                    <p>Select a backup folder on first use and change it any time you need.</p>
-                </article>
-            </div>
-        </div>
        
+
         <div class="section">
+
             <h2>Quick Guide</h2>
-            <p>See the essential <strong>Android</strong> steps and start using ChordFlow confidently in just a few minutes.</p>
+
+            <p>Discover the <strong>Android</strong> app's main features and how to make the most of it in just a few steps.</p>
+
             <div style="text-align: center; margin-top: 20px;">
+
                 <a href="guide_chordflow.html" class="button">Open Full Guide</a>
+
             </div>
+
         </div>
 
+
+
         <div class="section">
+
             <h2>Feedback & Support</h2>
+
             <p>If you have suggestions or find any issues, I'd love to hear your feedback.</p>
+
             <p>This is a free and ad-free application. If you'd like to support development, all help is appreciated.</p>
+
             <div style="text-align: center; margin-top: 20px;">
+
                 <a class="button" href="mailto:melo.comercial@gmail.com">Send feedback via email</a>
+
             </div>
-        </div>
-        
-        <div class="section">
-            <h2>Support Development</h2>
-            <p>ChordFlow is free and has no ads. If you enjoy the app and would like to support its development, you can contribute via PayPal. Every bit helps and makes a difference!</p>
-            <div style="text-align: center; margin-top: 20px;">
-                <a class="button" href="https://www.paypal.me/emanuelmelo10" onclick="gtag('event', 'clique_paypal', {'action_type': 'donation', 'language': 'en'});">Support via PayPal</a>
-            </div>
+
         </div>
 
-        <div class="final-cta">
-            <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play_final', {'app_platform': 'android', 'language': 'en'});">Install ChordFlow on Android</a>
+        
+
+        <div class="section">
+
+            <h2>Support Development</h2>
+
+            <p>ChordFlow is free and has no ads. If you enjoy the app and would like to support its development, you can contribute via PayPal. Every bit helps and makes a difference!</p>
+
+            <div style="text-align: center; margin-top: 20px;">
+
+                <a class="button" href="https://www.paypal.me/emanuelmelo10" onclick="gtag('event', 'clique_paypal', {'action_type': 'donation', 'language': 'en'});">Support via PayPal</a>
+
+            </div>
+
         </div>
+
     </section>
+
     <footer>
+
         <div class="container">
+
             <p><a href="index.html">Privacy Policy</a></p>
-            <p>&copy; 2026 ChordFlow. All rights reserved.</p>
+
+            <p>&copy; 2025 ChordFlow. All rights reserved.</p>
+
         </div>
+
     </footer>
+
 </body>
+
 </html>
+
