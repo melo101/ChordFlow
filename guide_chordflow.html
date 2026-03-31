@@ -10,13 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETTZ8V04M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QETTZ8V04M');
     </script>
     <style>
@@ -31,13 +29,7 @@
             --spacing-md: 20px;
             --spacing-lg: 40px;
         }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -45,27 +37,15 @@
             line-height: 1.6;
             padding: var(--spacing-md);
         }
-        
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--spacing-md);
-        }
-        
+        .container { width: 100%; max-width: 980px; margin: 0 auto; padding: var(--spacing-md); }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: var(--spacing-lg);
+            gap: 16px;
         }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
         .back-button {
             display: inline-block;
             padding: 10px 20px;
@@ -76,12 +56,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
-        
-        .back-button:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
+        .back-button:hover { background-color: var(--primary-dark); transform: translateY(-2px); }
         .section {
             margin-bottom: var(--spacing-lg);
             padding: var(--spacing-md);
@@ -89,7 +64,6 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
         .yellow-title {
             color: var(--primary-color);
             font-weight: 700;
@@ -101,44 +75,11 @@
             padding-bottom: 5px;
             display: inline-block;
         }
-        
-        h1.yellow-title {
-            font-size: 2rem;
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        p {
-            margin-bottom: var(--spacing-md);
-            color: var(--text-light);
-        }
-        
-        ul {
-            margin-left: var(--spacing-md);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        ol {
-            margin-left: var(--spacing-md);
-            margin-bottom: var(--spacing-md);
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-light);
-        }
-        
-        ol li {
-            padding-left: 10px;
-        }
-        
-        code {
-            background-color: var(--bg-color);
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
-        }
-        
+        h1.yellow-title { font-size: 2rem; margin-bottom: var(--spacing-lg); margin-top: 0; }
+        p { margin-bottom: var(--spacing-md); color: var(--text-light); }
+        ul, ol { margin-left: var(--spacing-md); margin-bottom: var(--spacing-md); padding-left: 20px; }
+        li { margin-bottom: var(--spacing-sm); color: var(--text-light); }
+        code { background-color: var(--bg-color); padding: 2px 5px; border-radius: 3px; font-family: monospace; }
         .example-box {
             background-color: var(--bg-color);
             padding: var(--spacing-md);
@@ -146,20 +87,28 @@
             margin: var(--spacing-md) 0;
             overflow-x: auto;
         }
-        
+        .guide-shot {
+            margin: 22px 0 10px;
+            background: rgba(10, 37, 55, 0.45);
+            border: 1px solid rgba(255, 204, 51, 0.22);
+            border-radius: 16px;
+            padding: 16px;
+        }
+        .guide-shot img {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            margin: 0 auto;
+            border-radius: 14px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+        }
+        .guide-shot figcaption { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
+        .shot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; align-items: start; }
+        footer { margin-top: var(--spacing-lg); text-align: center; color: var(--text-light); }
         @media (max-width: 768px) {
-            .container {
-                padding: var(--spacing-sm);
-            }
-            
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .logo {
-                margin-bottom: var(--spacing-sm);
-            }
+            .container { padding: var(--spacing-sm); }
+            header { flex-direction: column; align-items: flex-start; }
+            .guide-shot { padding: 12px; }
         }
     </style>
 </head>
@@ -169,222 +118,236 @@
             <div class="logo">ChordFlow</div>
             <a href="landing.html" class="back-button">Back to Home Page</a>
         </header>
-        
-        <h1 class="yellow-title">USER GUIDE – CHORDFLOW</h1>
-        
+        <h1 class="yellow-title">USER GUIDE - CHORDFLOW</h1>
         <div class="section">
-            <div class="yellow-title">1. INTRODUCTION</div>
-            <p>ChordFlow is a simple and intuitive application for musicians to organize their setlists and songs with chords. Available for Android (optimized for stage use) and Windows (for creating and editing repertoires).</p>
-
-            <div class="yellow-title">2. MAIN MENU</div>
-            <p>When you open ChordFlow, you'll see the main menu with the following options:</p>
+            <div class="yellow-title">1. MAIN MENU</div>
+            <p>ChordFlow helps musicians organize setlists, edit songs, import chord sheets, and use the app comfortably during rehearsals or live performance.</p>
             <ul>
-                <li>Setlists: View and manage your song collections</li>
-                <li>Import Songs: Add new songs from text files</li>
-                <li>Settings: Configure application preferences</li>
-                <li>About: Information about the application</li>
+                <li><strong>Add Song:</strong> Start a new song from scratch.</li>
+                <li><strong>Import Songs:</strong> Bring songs in from files, pasted text, links, or OCR.</li>
+                <li><strong>Setlists:</strong> Open your song collections.</li>
+                <li><strong>Tuner:</strong> Access the built-in tuner.</li>
             </ul>
-
-            <div class="yellow-title">3. SETLISTS</div>
+            <figure class="guide-shot">
+                <img src="imagens_guia/main_en.png" alt="ChordFlow main menu">
+                <figcaption>Main menu with the primary shortcuts for adding songs, importing content, opening setlists, and using the tuner.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">2. SETLISTS</div>
+            <p>The setlists screen is where you manage your repertoires.</p>
             <ul>
-                <li>View Setlists: The list shows all created setlists</li>
-                <li>Add Setlist: Tap on the yellow "+" button in the bottom right corner</li>
-                <li>Open Setlist: Tap on any setlist to see the songs it contains</li>
-                <li>Context Menu: Long press on a setlist to access additional options like deleting or exporting the setlist</li>
+                <li>View all created setlists.</li>
+                <li>Tap the yellow <code>+</code> button to create a new setlist.</li>
+                <li>Open a setlist to see the songs inside it.</li>
+                <li>Long press a setlist to access extra actions such as deleting or exporting it.</li>
             </ul>
-
-            <div class="yellow-title">4. SONG LIST</div>
-            <p>This screen shows all songs within a selected setlist.</p>
+            <figure class="guide-shot">
+                <img src="imagens_guia/set_list_en.png" alt="Setlists screen in ChordFlow">
+                <figcaption>The setlists screen keeps your repertoires organized and easy to open on stage.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">3. ADDING A SONG</div>
+            <p>From the main menu, tap <strong>Add Song</strong> to choose the format you want to create.</p>
             <ul>
-                <li>View Songs: Displays all songs in the selected setlist</li>
-                <li>Add Song: Tap the yellow "+" button to create a new song</li>
-                <li>Open Song: Tap any song to view its chords</li>
-                <li>Search: Use the search box to quickly find songs</li>
-                <li>Change Order: Use the floating buttons to reorder songs</li>
-                <li>Context Menu: Long press a song to edit or delete it</li>
+                <li><strong>Add Chords by Section:</strong> For songs organized by intro, verse, chorus, bridge, and similar sections.</li>
+                <li><strong>Add Lyrics with Chords:</strong> For lyrics where the chord line appears directly above the words.</li>
             </ul>
-
+            <figure class="guide-shot">
+                <img src="imagens_guia/addsong_en.png" alt="Add song options in ChordFlow">
+                <figcaption>ChordFlow lets you choose between a structured section-based song and a lyrics-with-chords layout.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">4. SONG EDIT SCREEN</div>
+            <p>Use the section-based editor when you want a clean stage view with named sections and chord blocks.</p>
+            <ul>
+                <li>Enter the song title.</li>
+                <li>Set the original key, such as <code>C</code>, <code>D</code>, or <code>Am</code>.</li>
+                <li>Add sections like Intro, Verse, Chorus, or Bridge.</li>
+                <li>Long press existing sections later to edit or remove them.</li>
+                <li>Tap <strong>Save Song</strong> to store everything.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/add_song_chords_en.png" alt="Section-based song editor">
+                <figcaption>The section editor is ideal for building chord progressions by song part.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
             <div class="yellow-title">5. SONG DETAILS SCREEN</div>
-            <p>This screen displays the formatted chords to play.</p>
+            <p>This is the main performance view, where ChordFlow shows the song ready to read and play.</p>
             <ul>
-                <li>View Song: See the chords organized by sections</li>
-                <li>Scroll: Slide up and down to view the full song</li>
-                <li>Zoom: Pinch to zoom in or out</li>
-                <li>Reset Zoom: Double-tap to restore default size</li>
-                <li>Transpose: Tap the transpose icon (musical note) to open the transpose dialog</li>
-                <li>Transpose Dialog: Use the slider to change semitones and choose between sharp (#) or flat (b) notation</li>
-                <li>Return to List: Swipe from left to right to go back</li>
+                <li>Scroll vertically through the full song.</li>
+                <li>Pinch to zoom in or out.</li>
+                <li>Double tap to reset zoom.</li>
+                <li>Swipe from left to right to go back to the previous screen.</li>
+                <li>Tap <strong>Transpose</strong> to change the key instantly.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/music_view_chords_en.png" alt="Song details view with chords">
+                <figcaption>The song details screen shows sections and chords in a format designed for fast reading.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">6. VIEW MODES</div>
+            <p>Inside the song view, you can switch between different visual layouts depending on your device and reading preference.</p>
+            <ul>
+                <li><strong>Auto view:</strong> Lets the app choose the best layout automatically.</li>
+                <li><strong>Classic view:</strong> Keeps the more traditional chord sheet appearance.</li>
+                <li><strong>Responsive view:</strong> Adjusts the layout for easier reading on different screen sizes.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/view_mode.png" alt="View mode selector in ChordFlow">
+                <figcaption>Switch view modes to make the song easier to read during practice or live use.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">7. KEY TRANSPOSITION</div>
+            <p>ChordFlow can transpose songs for different singers, instruments, or capo positions.</p>
+            <ol>
+                <li>Open a song in the details screen.</li>
+                <li>Tap the <strong>Transpose</strong> button.</li>
+                <li>Adjust the number of semitones.</li>
+                <li>Choose sharp or flat notation when available.</li>
+                <li>Apply the change and keep playing.</li>
+            </ol>
+            <p>Transposition is especially useful when you need to adapt a song quickly without editing the original content.</p>
+            <figure class="guide-shot">
+                <img src="imagens_guia/transpose_en.png" alt="Transpose dialog in ChordFlow">
+                <figcaption>The transpose dialog lets you move the song key up or down in seconds.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">8. SONGS WITH LYRICS AND CHORDS</div>
+            <p>ChordFlow also supports songs where the chord line is aligned directly above the lyrics.</p>
+            <ol>
+                <li>Tap the <code>+</code> button or choose <strong>Add Song</strong>.</li>
+                <li>Select <strong>Add Lyrics with Chords</strong>.</li>
+                <li>Enter the title, artist, and song key.</li>
+                <li>Write chord lines starting with a dot <code>.</code>.</li>
+                <li>Use square brackets for sections, such as <code>[Verse]</code> or <code>[Chorus]</code>.</li>
+                <li>Tap <strong>Save Song</strong>.</li>
+            </ol>
+            <div class="example-box">
+                <p>[Verse]</p>
+                <p>.       C       G        Am      F</p>
+                <p>Imagine there's no heaven</p>
+                <p>.       C       G        Am      F</p>
+                <p>It's easy if you try</p>
+            </div>
+            <div class="shot-grid">
+                <figure class="guide-shot">
+                    <img src="imagens_guia/add_song_lyrics.png" alt="Lyrics with chords editor in ChordFlow">
+                    <figcaption>Editor for entering title, artist, key, and lyrics with chord lines.</figcaption>
+                </figure>
+                <figure class="guide-shot">
+                    <img src="imagens_guia/lyrics_en.png" alt="Song with lyrics and chords in ChordFlow">
+                    <figcaption>Finished lyrics-and-chords songs are displayed in a readable stage-friendly layout.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">9. GUITAR AND PIANO CHORD VIEWER</div>
+            <p>When a chord is available in the viewer, ChordFlow can show its shape on guitar and its notes on piano.</p>
+            <ul>
+                <li>Tap a chord in the song view to open the chord dialog.</li>
+                <li>Switch between the <strong>Guitar</strong> and <strong>Piano</strong> tabs.</li>
+                <li>Browse available voicings or inversions.</li>
+                <li>Use <strong>Listen Chord</strong> to hear the chord when supported.</li>
+            </ul>
+            <div class="shot-grid">
+                <figure class="guide-shot">
+                    <img src="imagens_guia/guitar_chord_en.png" alt="Guitar chord diagram in ChordFlow">
+                    <figcaption>Chord viewer with a guitar diagram showing fingering positions.</figcaption>
+                </figure>
+                <figure class="guide-shot">
+                    <img src="imagens_guia/piano_chord_en.png" alt="Piano chord diagram in ChordFlow">
+                    <figcaption>The same chord can also be visualized on piano, with the highlighted notes clearly marked.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">10. IMPORTING SONGS</div>
+            <p>ChordFlow supports importing songs from files, pasted text, links, and image OCR, with a preview before saving.</p>
+            <ol>
+                <li>In the main menu, select <strong>Import Songs</strong>.</li>
+                <li>Choose the import source.</li>
+                <li>Review the detected content.</li>
+                <li>Adjust title, artist, key, and format if needed.</li>
+                <li>Save the imported song into the correct setlist.</li>
+            </ol>
+            <ul>
+                <li>Import file</li>
+                <li>Paste chord sheet</li>
+                <li>Import from link</li>
+                <li>Import PDF</li>
+                <li>Import from image (OCR)</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/import_song_en.png" alt="Import source selection in ChordFlow">
+                <figcaption>The import menu gathers all supported ways to bring songs into ChordFlow.</figcaption>
+            </figure>
+            <h4>Examples of formats</h4>
+            <p><strong>TXT compact format:</strong> Separate songs with a blank line.</p>
+            <div class="example-box">
+                <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
+                <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
+            </div>
+            <p><strong>TXT multiline format:</strong> Separate songs using the marker <code>===MUSIC_SEPARATOR===</code>.</p>
+            <div class="example-box">
+                <p>Hotel California (Dm)</p>
+                <p>Eagles</p>
+                <p>[Intro]</p>
+                <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+                <p>[Verse]</p>
+                <p>.Dm                 A7</p>
+                <p>On a dark desert highway...</p>
+                <p>...</p>
+                <p>===MUSIC_SEPARATOR===</p>
+                <p>Can't Help Falling in Love (G)</p>
+                <p>Elvis Presley</p>
+                <p>[Intro]</p>
+                <p>.G  D  Em  C  G  D  G</p>
+                <p>...</p>
+            </div>
+            <p><strong>PDF:</strong> Works with selectable-text PDFs and scanned PDFs converted through OCR.</p>
+        </div>
+        <div class="section">
+            <div class="yellow-title">11. TIPS AND TRICKS</div>
+            <ul>
+                <li>Use zoom on the song details screen to fit your needs.</li>
+                <li>Prevent screen timeout during rehearsals and performances.</li>
+                <li>Use swipe gestures to move quickly through your workflow.</li>
+                <li>Organize songs into themed setlists for faster access on stage.</li>
             </ul>
         </div>
-
         <div class="section">
-            <div class="yellow-title">6. SONG EDIT SCREEN</div>
-            <p>This screen allows you to create or edit a song.</p>
-            <ul>
-                <li>Edit Title: Enter the song name</li>
-                <li>Set Key: Specify the original key (e.g., C, D, Am)</li>
-                <li>Add Sections: Enter section name (e.g., Verse, Chorus), type chords and tap "Add Section"</li>
-                <li>Edit Sections: Long press an existing section to edit or remove</li>
-                <li>Save Song: Tap "Save Song" at the bottom</li>
-            </ul>
-
-            <div class="yellow-title">7. GESTURES & INTERACTIONS</div>
-            <ul>
-                <li>Swipe in Details: Swipe left to right to return to list</li>
-                <li>Zoom in Details: Pinch to zoom; double-tap to reset</li>
-                <li>Context Menu: Long press an item to see options</li>
-            </ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">8. KEY TRANSPOSITION</div>
-<p>Feature to change the song key for different vocals or instruments.</p>
-<ol>
-    <li>Open a song in the details screen</li>
-    <li>Tap the transpose icon (musical note) to open the dialog</li>
-    <li>Use the slider to adjust semitones (positive = up, negative = down)</li>
-    <li>Choose your preferred notation: sharps (#) or flats (b)</li>
-    <li>Tap "Apply" to see the transposed chords</li>
-    <li>The current key is shown next to the song title</li>
-    <li>Transposition is saved automatically</li>
-</ol>
-<p>Note: Flat notation is useful for brass and wind instruments.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">9. SONGS WITH LYRICS & CHORDS</div>
-<p>ChordFlow allows adding songs with embedded lyrics and chords.</p>
-<ol>
-    <li>Tap the "+" button in the song list</li>
-    <li>Select "Add Song with Lyrics"</li>
-    <li>Enter the title and key</li>
-    <li>Add chord lines with a dot (.) above the lyrics:</li>
-</ol>
-
-<div class="example-box">
-    <p>[Verse]</p>
-    <p>.       C       G        Am      F</p>
-    <p>Imagine there's no heaven</p>
-    <p>.       C       G        Am      F</p>
-    <p>It's easy if you try</p>
-</div>
-
-<ol start="5">
-    <li>For standalone chords, use [D]</li>
-    <li>Use [Verse] or [Chorus] to mark sections</li>
-    <li>Tap "Save"</li>
-</ol>
-
-<p>Songs with lyrics are marked with a lyrics icon and can be transposed too.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">10. IMPORTING SONGS</div>
-<p>ChordFlow supports importing songs from files, pasted text, links, and image OCR, with a preview before saving.</p>
-<ol>
-    <li>In the main menu, select "Import Songs"</li>
-    <li>Choose the import source:</li>
-</ol>
-<ul>
-    <li>Import file</li>
-    <li>Paste chord sheet</li>
-    <li>Import from link</li>
-    <li>Import from image (OCR)</li>
-</ul>
-<ol start="3">
-    <li>When importing a file, you can choose TXT or PDF</li>
-    <li>PDF files try text extraction first, and scanned/image PDFs fall back to OCR</li>
-    <li>For link imports, the most reliable sources are Cifra Club and Ultimate Guitar</li>
-    <li>Review the preview and adjust title, artist, key, and content before saving</li>
-</ol>
-
-<p>Tip: You can prepare multiple songs in a text editor and import them all together.</p>
-
-<h4>Examples of Formats:</h4>
-
-<p><strong>TXT Compact Format:</strong> Separate songs with a line break (blank space).</p>
-
-<div class="example-box">
-    <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
-</div>
-
-<p><strong>TXT Multiline Format:</strong> Separate songs using the marker ===MUSIC_SEPARATOR===.</p>
-
-<div class="example-box">
-    <p>Hotel California (Dm)</p>
-    <p>Eagles</p>
-    <p>[Intro]</p>
-    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-    <p>[Verse]</p>
-    <p>.Dm                 A7</p>
-    <p>On a dark desert highway...</p>
-    <p>...</p>
-    <p>===MUSIC_SEPARATOR===</p>
-    <p>Can't Help Falling in Love (G)</p>
-    <p>Elvis Presley</p>
-    <p>[Intro]</p>
-    <p>.G  D  Em  C  G  D  G</p>
-    <p>...</p>
-</div>
-
-<p><strong>PDF:</strong> Works with selectable-text PDFs and scanned PDFs converted through OCR.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">11. TIPS & TRICKS</div>
-<ul>
-    <li>Use zoom on the song details screen to fit your needs</li>
-    <li>Prevent screen timeout during rehearsals</li>
-    <li>Swipe to switch between songs quickly</li>
-    <li>Organize songs in themed setlists for fast access</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">12. FILE EXAMPLES</div>
-<p>Try our song format examples! Download the .txt files and test the import feature in the ChordFlow app.</p>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
-    <a download="lyrics.txt" href="lyrics.txt" class="back-button">
-        Lyrics + Chords
-    </a>
-    
-    <a download="chord_section.txt" href="chord_section.txt" class="back-button">
-        Chords by Section
-    </a>
-</div>
-</div>
-
-<div class="section">
-<div class="yellow-title">13. WINDOWS VERSION INSTALLATION</div>
-<p>The Windows version of ChordFlow is now distributed through an installer that simplifies the installation process. You may still receive some security warnings from Windows Defender or your antivirus software. This happens because:</p>
-<ul>
-    <li>ChordFlow is not signed with a commercial certificate (which is expensive)</li>
-    <li>Windows SmartScreen may display a warning about an "unrecognized app"</li>
-</ul>
-
-<p><strong>Important:</strong> ChordFlow is completely safe and does not contain any malware or viruses.</p>
-
-<p>To install ChordFlow on Windows:</p>
-<ol>
-    <li>Download the installer from our website</li>
-    <li>If you see a Windows SmartScreen warning, click on "More info"</li>
-    <li>Then click on "Run anyway"</li>
-    <li>Follow the installation wizard instructions to complete the process</li>
-    <li>After installation, ChordFlow will be available in your Windows Start menu</li>
-</ol>
-
-<p>The application does not collect any personal data and works entirely offline. You can verify our <a href="index.html" style="color: #FFCC33; text-decoration: none;">Privacy Policy</a> for more information.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">14. USING AI TO GENERATE FILES</div>
-<p>You can speed up the creation of your music files using AIs like <strong>ChatGPT</strong>, <strong>Gemini</strong>, etc.</p>
-<p>Just ask the AI to write songs in the format recognized by the app.</p>
-
-<p><strong>For lyrics with chords:</strong></p>
-<div class="example-box">
+            <div class="yellow-title">12. FILE EXAMPLES</div>
+            <p>Try our song format examples. Download the files below and test the import feature in the ChordFlow app.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                <a download="lyrics.txt" href="lyrics.txt" class="back-button">Lyrics + Chords</a>
+                <a download="chord_section.txt" href="chord_section.txt" class="back-button">Chords by Section</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">13. WINDOWS VERSION INSTALLATION</div>
+            <p>The Windows version of ChordFlow is distributed through an installer that simplifies setup. You may still see Windows Defender or SmartScreen warnings because the app is not signed with a commercial certificate.</p>
+            <ol>
+                <li>Download the installer from the website.</li>
+                <li>If SmartScreen appears, click <strong>More info</strong>.</li>
+                <li>Then click <strong>Run anyway</strong>.</li>
+                <li>Follow the installation wizard.</li>
+                <li>After installation, ChordFlow will be available in the Windows Start menu.</li>
+            </ol>
+            <p><strong>Important:</strong> ChordFlow does not collect personal data and works fully offline.</p>
+            <p>You can also read our <a href="index.html" style="color: #FFCC33; text-decoration: none;">Privacy Policy</a> for more information.</p>
+        </div>
+        <div class="section">
+            <div class="yellow-title">14. USING AI TO GENERATE FILES</div>
+            <p>You can speed up song preparation with tools like <strong>ChatGPT</strong> or <strong>Gemini</strong>. Ask the AI to generate songs in one of the formats recognized by ChordFlow, then import the file directly into the app.</p>
+            <p><strong>For lyrics with chords:</strong></p>
+            <div class="example-box">
 Imagine (C)<br>
 John Lennon<br>
 [Intro]<br>
@@ -396,25 +359,18 @@ Imagine there's no heaven<br>
 It's easy if you try<br>
 <br>
 ===MUSIC_SEPARATOR===
-</div>
-
-<p><strong>For chord sections:</strong></p>
-<div class="example-box">
+            </div>
+            <p><strong>For chord sections:</strong></p>
+            <div class="example-box">
 IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
-</div>
-
-<p>After generating the file, import it directly into ChordFlow.</p>
-
-<div style="margin-top: 30px; text-align: center;">
-    <a href="landing.html" class="back-button">Back to Home Page</a>
-</div>
-</div>
-
-<footer>
-    <p>&copy; 2025 ChordFlow. All rights reserved.</p>
-</footer>
-
-</div>
-</div>
+            </div>
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="landing.html" class="back-button">Back to Home Page</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 ChordFlow. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

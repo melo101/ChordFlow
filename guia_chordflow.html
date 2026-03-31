@@ -1,23 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guia do utilizador ChordFlow - Aprenda a usar todas as funcionalidades do aplicativo">
+    <meta name="description" content="Guia do utilizador ChordFlow - Aprenda a usar todas as funcionalidades da app">
     <title>Guia do Utilizador - ChordFlow</title>
     <link rel="icon" href="icone_chordflow.ico" type="image/x-icon">
     <link rel="shortcut icon" href="icone_chordflow.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETTZ8V04M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QETTZ8V04M');
     </script>
     <style>
@@ -32,13 +29,7 @@
             --spacing-md: 20px;
             --spacing-lg: 40px;
         }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -46,27 +37,15 @@
             line-height: 1.6;
             padding: var(--spacing-md);
         }
-        
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--spacing-md);
-        }
-        
+        .container { width: 100%; max-width: 980px; margin: 0 auto; padding: var(--spacing-md); }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: var(--spacing-lg);
+            gap: 16px;
         }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
         .back-button {
             display: inline-block;
             padding: 10px 20px;
@@ -77,12 +56,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
-        
-        .back-button:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
+        .back-button:hover { background-color: var(--primary-dark); transform: translateY(-2px); }
         .section {
             margin-bottom: var(--spacing-lg);
             padding: var(--spacing-md);
@@ -90,7 +64,6 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
         .yellow-title {
             color: var(--primary-color);
             font-weight: 700;
@@ -102,44 +75,11 @@
             padding-bottom: 5px;
             display: inline-block;
         }
-        
-        h1.yellow-title {
-            font-size: 2rem;
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        p {
-            margin-bottom: var(--spacing-md);
-            color: var(--text-light);
-        }
-        
-        ul {
-            margin-left: var(--spacing-md);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        ol {
-            margin-left: var(--spacing-md);
-            margin-bottom: var(--spacing-md);
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-light);
-        }
-        
-        ol li {
-            padding-left: 10px;
-        }
-        
-        code {
-            background-color: var(--bg-color);
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
-        }
-        
+        h1.yellow-title { font-size: 2rem; margin-bottom: var(--spacing-lg); margin-top: 0; }
+        p { margin-bottom: var(--spacing-md); color: var(--text-light); }
+        ul, ol { margin-left: var(--spacing-md); margin-bottom: var(--spacing-md); padding-left: 20px; }
+        li { margin-bottom: var(--spacing-sm); color: var(--text-light); }
+        code { background-color: var(--bg-color); padding: 2px 5px; border-radius: 3px; font-family: monospace; }
         .example-box {
             background-color: var(--bg-color);
             padding: var(--spacing-md);
@@ -147,20 +87,28 @@
             margin: var(--spacing-md) 0;
             overflow-x: auto;
         }
-        
+        .guide-shot {
+            margin: 22px 0 10px;
+            background: rgba(10, 37, 55, 0.45);
+            border: 1px solid rgba(255, 204, 51, 0.22);
+            border-radius: 16px;
+            padding: 16px;
+        }
+        .guide-shot img {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            margin: 0 auto;
+            border-radius: 14px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+        }
+        .guide-shot figcaption { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
+        .shot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; align-items: start; }
+        footer { margin-top: var(--spacing-lg); text-align: center; color: var(--text-light); }
         @media (max-width: 768px) {
-            .container {
-                padding: var(--spacing-sm);
-            }
-            
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .logo {
-                margin-bottom: var(--spacing-sm);
-            }
+            .container { padding: var(--spacing-sm); }
+            header { flex-direction: column; align-items: flex-start; }
+            .guide-shot { padding: 12px; }
         }
     </style>
 </head>
@@ -168,225 +116,238 @@
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
+            <a href="landing.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
         </header>
-        
         <h1 class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</h1>
-        
         <div class="section">
-<div class="yellow-title">1. LISTA DE REPERTÓRIOS</div>
-<p>Este é o ecrã principal que mostra todos os seus repertórios de músicas.</p>
-<ul>
-    <li>Ver Repertórios: A lista mostra todos os repertórios criados</li>
-    <li>Adicionar Repertório: Toca no botão amarelo com "+" no canto inferior direito</li>
-    <li>Abrir Repertório: toca em qualquer repertório para ver as músicas que contém</li>
-    <li>Menu de Contexto: Pressiona prolongadamente num repertório para aceder a opções adicionais como eliminar ou exportar o repertório</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">2. LISTA DE MÚSICAS</div>
-<p>Este ecrã mostra todas as músicas num repertório específico.</p>
-<ul>
-    <li>Ver Músicas: A lista mostra todas as músicas no repertório selecionado</li>
-    <li>Adicionar Música: Toca no botão amarelo com "+" para criar uma nova música</li>
-    <li>Abrir Música: Toca em qualquer música para ver os seus acordes</li>
-    <li>Pesquisar: Utiliza a caixa de pesquisa para encontrar músicas rapidamente</li>
-    <li>Alterar Ordem: Utiliza os botões flutuantes para alterar a ordem das músicas no repertório</li>
-    <li>Menu de Contexto: Pressiona prolongadamente numa música para editar ou eliminar</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">3. ECRÃ DE DETALHE DA MÚSICA</div>
-<p>Este ecrã mostra os acordes para tocar.</p>
-<ul>
-    <li>Ver Música: Vê os acordes formatados por secções</li>
-    <li>Deslocar: Desliza para cima e para baixo para ver toda a música</li>
-    <li>Zoom: Utiliza o gesto de pinça (dois dedos) para aumentar ou diminuir o tamanho do texto</li>
-    <li>Repor Zoom: Toca duas vezes para restaurar o tamanho original do texto</li>
-    <li>Transpor: Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</li>
-    <li>Diálogo de Transposição: Ajusta o número de semitons usando a barra deslizante e escolhe entre notação com sustenidos (#) ou bemois (b)</li>
-    <li>Voltar à Lista: Desliza da esquerda para a direita para voltar à lista de músicas</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">4. ECRÃ DE EDIÇÃO DE MÚSICA</div>
-<p>Este ecrã permite criar ou modificar uma música.</p>
-<ul>
-    <li>Editar Título: Preenche o nome da música</li>
-    <li>Definir Tonalidade: Especifica a tonalidade original da música (por ex., C, D, Am)</li>
-    <li>Adicionar Secções: Digita o nome da secção (por ex., Verso, Refrão), digita os acordes da secção e toca em "Adicionar Secção"</li>
-    <li>Editar Secções: Pressiona prolongadamente numa secção já adicionada para a editar ou remover</li>
-    <li>Guardar Música: Toca no botão "Guardar Música" na parte inferior do ecrã</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">5. GESTOS E INTERAÇÕES ESPECIAIS</div>
-<ul>
-    <li>Deslizar no Ecrã de Detalhes: Desliza da esquerda para a direita para voltar à lista de músicas</li>
-    <li>Zoom no Ecrã de Detalhes: Belisca com dois dedos para aumentar/diminuir o texto; Toca duplo para restaurar o tamanho original</li>
-    <li>Menu de Contexto: Pressiona prolongadamente num item para ver opções adicionais</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">6. TRANSPOSIÇÃO DE TOM</div>
-<p>Recurso para mudar o tom de uma música para acomodar vocais ou instrumentos diferentes.</p>
-<ol>
-    <li>Abre uma música no ecrã de detalhes</li>
-    <li>Toca no botão de transposição (ícone de nota musical) para abrir o diálogo de transposição</li>
-    <li>Ajusta o número de semitons usando a barra deslizante (valores positivos para subir o tom, negativos para baixar)</li>
-    <li>Escolhe a notação preferida: sustenidos (#) ou bemois (b) nas definições ou no diálogo de transposição</li>
-    <li>Toca em "Aplicar" para ver os acordes transpostos</li>
-    <li>O tom atual é exibido ao lado do título da música</li>
-    <li>A transposição é guardada automaticamente</li>
-</ol>
-<p>Nota: A notação com bemois é particularmente útil para instrumentos como saxofone, trompete e outros instrumentos de sopro que normalmente usam essa notação.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">7. MÚSICAS COM LETRAS E ACORDES</div>
-<p>O ChordFlow permite adicionar músicas com letras e acordes embutidos, facilitando a leitura e execução durante a performance.</p>
-<ol>
-    <li>Toca no botão "+" na lista de músicas</li>
-    <li>Seleciona "Adicionar Música com Letras"</li>
-    <li>Preenche o título e o tom da música</li>
-    <li>Adiciona as linhas de acordes começando com um ponto (.) e posicionando os acordes diretamente acima das sílabas correspondentes na linha seguinte:</li>
-</ol>
-
-<div class="example-box">
-<p>[Verso]</p>
-<p>.       C       G        Am      F</p>
-<p>Imagine there is no heaven</p>
-<p>.       C       G        Am      F</p>
-<p>It is easy if you try</p>
-</div>
-
-<ol start="5">
-    <li>Para adicionar acordes isolados, coloca-os entre colchetes, por exemplo: [D]</li>
-    <li>Para indicar secções, use o nome da secção entre colchetes numa linha separada, como [Verso] ou [Refrão]</li>
-    <li>Toca em "Guardar" para salvar a música</li>
-</ol>
-<p>As músicas com letras e acordes são identificadas pelo ícone de letras na lista de músicas e podem ser transpostas da mesma forma que as músicas apenas com acordes.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">8. IMPORTAÇÃO DE MÚSICAS</div>
-<p>O ChordFlow suporta importação por ficheiro, colagem de texto, link e OCR por imagem, permitindo preparar músicas em diferentes formatos e revê-las antes de guardar.</p>
-<ol>
-    <li>No menu principal, seleciona "Importar Músicas"</li>
-    <li>Escolhe a origem da importação:</li>
-</ol>
-<ul>
-    <li>Importar ficheiro</li>
-    <li>Colar cifra</li>
-    <li>Importar de link</li>
-    <li>Importar por imagem (OCR)</li>
-</ul>
-<ol start="3">
-    <li>Na importação por ficheiro, podes selecionar TXT ou PDF</li>
-    <li>O PDF tenta extrair o texto automaticamente e, se for uma digitalização ou imagem, a app usa OCR como alternativa</li>
-    <li>Para importação por link, as fontes mais fiáveis são Cifra Club e Ultimate Guitar</li>
-    <li>Revê a pré-visualização e ajusta título, artista, tom e conteúdo antes de guardar</li>
-</ol>
-
-<p>Dica: Podes preparar várias músicas num editor de texto e importá-las em sequência.</p>
-
-<h4>Exemplos de Formatos:</h4>
-
-<p><strong>TXT em Formato Compacto:</strong> Separe as músicas por uma quebra de linha (espaço em branco).</p>
-
-<div class="example-box">
-    <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
-    <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
-</div>
-
-<p><strong>TXT em Formato Multilinha:</strong> Separe as músicas usando o marcador ===MUSIC_SEPARATOR===.</p>
-
-<div class="example-box">
-    <p>Hotel California (Dm)</p>
-    <p>Eagles</p>
-    <p>[Intro]</p>
-    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-    <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
-    <p>[Verse]</p>
-    <p>.Dm                               A7</p>
-    <p>On a dark desert highway, cool wind in my hair</p>
-    <p>.C                         G</p>
-    <p>Warm smell of colitas rising up through the air</p>
-    <p>...</p>
-    <p>===MUSIC_SEPARATOR===</p>
-    <p>Can't Help Falling in Love (G)</p>
-    <p>Elvis Presley</p>
-    <p>[Intro]</p>
-    <p>.G  D  Em  C  G  D  G</p>
-    <p>...</p>
-</div>
-
-<p><strong>PDF:</strong> Funciona com ficheiros que já têm texto e também com PDFs digitalizados convertidos por OCR.</p>
-
-<p>Isto permite criar ou reunir músicas em vários formatos e importá-las rapidamente para o teu repertório.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">9. DICAS E TRUQUES</div>
-<ul>
-    <li>No ecrã de detalhes, usa o zoom para ajustar o tamanho do texto conforme a sua necessidade de visualização</li>
-    <li>Configure o seu dispositivo para não entrar em modo de espera durante ensaios ou atuações</li>
-    <li>Usa o gesto de deslizar para alternar rapidamente entre músicas durante uma atuação</li>
-    <li>Organiza as tuas músicas em repertórios temáticos ou baseados em ocasião para encontrá-las facilmente</li>
-</ul>
-</div>
-
-<div class="section">
-<div class="yellow-title">10. EXEMPLOS DE FICHEIROS</div>
-<p>Faz um teste com os nossos exemplos de formatos de música! Descarrega os ficheiros .txt abaixo e experimenta a funcionalidade de importação da app ChordFlow.</p>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
-    <a download="lyrics.txt" href="lyrics.txt" class="back-button">
-        Letra + Acordes
-    </a>
-    
-    <a download="chord_section.txt" href="chord_section.txt" class="back-button">
-        Acordes por Secção
-    </a>
-</div>
-</div>
-
-<div class="section">
-<div class="yellow-title">11. INSTALAÇÃO DA VERSÃO WINDOWS</div>
-<p>A versão Windows do ChordFlow agora é distribuída através de um instalador que facilita o processo de instalação. Ainda assim, podes receber alguns avisos de segurança do Windows Defender ou do teu antivírus. Isto acontece porque:</p>
-<ul>
-    <li>O ChordFlow não é assinado com um certificado comercial (que é caro)</li>
-    <li>O Windows SmartScreen pode exibir um aviso sobre uma "aplicação não reconhecida"</li>
-</ul>
-
-<p><strong>Importante:</strong> O ChordFlow é completamente seguro e não contém malware ou vírus.</p>
-
-<p>Para instalares o ChordFlow no Windows:</p>
-<ol>
-    <li>Descarrega o instalador do nosso site</li>
-    <li>Se vires uma mensagem de aviso do Windows SmartScreen, clica em "Mais informações"</li>
-    <li>Em seguida, clica em "Executar assim mesmo"</li>
-    <li>Segue as instruções do assistente de instalação para concluir o processo</li>
-    <li>Após a instalação, o ChordFlow estará disponível no menu Iniciar do Windows</li>
-</ol>
-
-<p>A aplicação não recolhe dados pessoais e funciona totalmente offline. Podes verificar a nossa <a href="index.html" style="color: #FFCC33; text-decoration: none;">Política de Privacidade</a> para mais informações.</p>
-</div>
-
-<div class="section">
-<div class="yellow-title">12. USAR INTELIGÊNCIA ARTIFICIAL PARA CRIAR FICHEIROS</div>
-
-<p>Podes facilitar a criação dos teus ficheiros utilizando inteligências artificiais como o <strong>ChatGPT</strong>, o <strong>Gemini</strong> ou outras semelhantes.</p>
-
-<p>Basta pedir que a IA escreva músicas no formato reconhecido pela aplicação.</p>
-
-<p><strong>Para músicas com letras e acordes:</strong></p>
-<div class="example-box">
+            <div class="yellow-title">1. MENU PRINCIPAL</div>
+            <p>O ChordFlow ajuda m&uacute;sicos a organizar repert&oacute;rios, editar m&uacute;sicas, importar cifras e usar a app com conforto em ensaios e atua&ccedil;&otilde;es.</p>
+            <ul>
+                <li><strong>Adicionar M&uacute;sica:</strong> Criar uma nova m&uacute;sica de raiz.</li>
+                <li><strong>Importar M&uacute;sicas:</strong> Trazer conte&uacute;do por ficheiro, texto colado, link ou OCR.</li>
+                <li><strong>Repert&oacute;rios:</strong> Abrir as tuas cole&ccedil;&otilde;es de m&uacute;sicas.</li>
+                <li><strong>Afinador:</strong> Aceder ao afinador integrado.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/main_en.png" alt="Menu principal do ChordFlow">
+                <figcaption>O menu principal d&aacute; acesso r&aacute;pido &agrave; cria&ccedil;&atilde;o de m&uacute;sicas, importa&ccedil;&atilde;o, repert&oacute;rios e afinador.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">2. REPERT&Oacute;RIOS</div>
+            <p>O ecr&atilde; de repert&oacute;rios &eacute; onde organizas as tuas cole&ccedil;&otilde;es de m&uacute;sicas.</p>
+            <ul>
+                <li>Ver todos os repert&oacute;rios criados.</li>
+                <li>Tocar no bot&atilde;o amarelo <code>+</code> para criar um novo repert&oacute;rio.</li>
+                <li>Abrir um repert&oacute;rio para ver as m&uacute;sicas que cont&eacute;m.</li>
+                <li>Pressionar prolongadamente um repert&oacute;rio para aceder a op&ccedil;&otilde;es extra, como eliminar ou exportar.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/set_list_en.png" alt="Ecrã de repertórios no ChordFlow">
+                <figcaption>Os repert&oacute;rios ajudam-te a manter as m&uacute;sicas organizadas e prontas para abrir em palco.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">3. ADICIONAR UMA M&Uacute;SICA</div>
+            <p>No menu principal, toca em <strong>Add Song</strong> para escolher o formato que queres criar.</p>
+            <ul>
+                <li><strong>Add Chords by Section:</strong> Para m&uacute;sicas organizadas por introdu&ccedil;&atilde;o, verso, refr&atilde;o, ponte e outras sec&ccedil;&otilde;es.</li>
+                <li><strong>Add Lyrics with Chords:</strong> Para letras com a linha de acordes alinhada por cima das palavras.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/addsong_en.png" alt="Opções para adicionar música no ChordFlow">
+                <figcaption>Podes escolher entre uma m&uacute;sica por sec&ccedil;&otilde;es ou uma m&uacute;sica com letra e acordes.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">4. ECR&Atilde; DE EDI&Ccedil;&Atilde;O POR SEC&Ccedil;&Otilde;ES</div>
+            <p>Usa o editor por sec&ccedil;&otilde;es quando queres uma apresenta&ccedil;&atilde;o limpa, com blocos de acordes separados por partes da m&uacute;sica.</p>
+            <ul>
+                <li>Introduz o t&iacute;tulo da m&uacute;sica.</li>
+                <li>Define o tom original, como <code>C</code>, <code>D</code> ou <code>Am</code>.</li>
+                <li>Adiciona sec&ccedil;&otilde;es como Intro, Verse, Chorus ou Bridge.</li>
+                <li>Mais tarde podes pressionar prolongadamente as sec&ccedil;&otilde;es para editar ou remover.</li>
+                <li>Toca em <strong>Save Song</strong> para guardar tudo.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/add_song_chords_en.png" alt="Editor de música por secções">
+                <figcaption>O editor por sec&ccedil;&otilde;es &eacute; ideal para montar progress&otilde;es de acordes por parte da m&uacute;sica.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">5. ECR&Atilde; DE VISUALIZA&Ccedil;&Atilde;O DA M&Uacute;SICA</div>
+            <p>Este &eacute; o principal ecr&atilde; de performance, onde o ChordFlow mostra a m&uacute;sica pronta a ler e tocar.</p>
+            <ul>
+                <li>Desliza verticalmente para percorrer a m&uacute;sica completa.</li>
+                <li>Belisca com dois dedos para aumentar ou diminuir o zoom.</li>
+                <li>Toca duas vezes para repor o zoom.</li>
+                <li>Desliza da esquerda para a direita para voltar ao ecr&atilde; anterior.</li>
+                <li>Toca em <strong>Transpose</strong> para mudar o tom de imediato.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/music_view_chords_en.png" alt="Ecrã de visualização da música com acordes">
+                <figcaption>O ecr&atilde; de visualiza&ccedil;&atilde;o mostra sec&ccedil;&otilde;es e acordes num formato pensado para leitura r&aacute;pida.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">6. MODOS DE VISUALIZA&Ccedil;&Atilde;O</div>
+            <p>Dentro da visualiza&ccedil;&atilde;o da m&uacute;sica, podes alternar entre diferentes layouts consoante o dispositivo e a forma como preferes ler.</p>
+            <ul>
+                <li><strong>Auto view:</strong> Deixa a app escolher automaticamente a melhor apresenta&ccedil;&atilde;o.</li>
+                <li><strong>Classic view:</strong> Mant&eacute;m o aspeto mais tradicional da cifra.</li>
+                <li><strong>Responsive view:</strong> Ajusta o layout para facilitar a leitura em diferentes tamanhos de ecr&atilde;.</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/view_mode.png" alt="Seletor de modo de visualização no ChordFlow">
+                <figcaption>Altera o modo de visualiza&ccedil;&atilde;o para ler a m&uacute;sica com mais conforto em ensaio ou atua&ccedil;&atilde;o.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">7. TRANSPOSI&Ccedil;&Atilde;O DE TOM</div>
+            <p>O ChordFlow consegue transpor as m&uacute;sicas para diferentes vozes, instrumentos ou posi&ccedil;&otilde;es de capo.</p>
+            <ol>
+                <li>Abre uma m&uacute;sica no ecr&atilde; de visualiza&ccedil;&atilde;o.</li>
+                <li>Toca em <strong>Transpose</strong>.</li>
+                <li>Ajusta o n&uacute;mero de semitons.</li>
+                <li>Escolhe sustenidos ou bemois quando essa op&ccedil;&atilde;o estiver dispon&iacute;vel.</li>
+                <li>Aplica a altera&ccedil;&atilde;o e continua a tocar.</li>
+            </ol>
+            <p>A transposi&ccedil;&atilde;o &eacute; especialmente &uacute;til quando precisas de adaptar uma m&uacute;sica rapidamente sem editar o conte&uacute;do original.</p>
+            <figure class="guide-shot">
+                <img src="imagens_guia/transpose_en.png" alt="Janela de transposição no ChordFlow">
+                <figcaption>A janela de transposi&ccedil;&atilde;o permite subir ou descer o tom da m&uacute;sica em segundos.</figcaption>
+            </figure>
+        </div>
+        <div class="section">
+            <div class="yellow-title">8. M&Uacute;SICAS COM LETRA E ACORDES</div>
+            <p>O ChordFlow tamb&eacute;m suporta m&uacute;sicas em que a linha de acordes fica diretamente por cima da letra.</p>
+            <ol>
+                <li>Toca no bot&atilde;o <code>+</code> ou escolhe <strong>Add Song</strong>.</li>
+                <li>Seleciona <strong>Add Lyrics with Chords</strong>.</li>
+                <li>Preenche t&iacute;tulo, artista e tom da m&uacute;sica.</li>
+                <li>Escreve as linhas de acordes a come&ccedil;ar por um ponto <code>.</code>.</li>
+                <li>Usa colchetes para marcar sec&ccedil;&otilde;es, como <code>[Verse]</code> ou <code>[Chorus]</code>.</li>
+                <li>Toca em <strong>Save Song</strong>.</li>
+            </ol>
+            <div class="example-box">
+                <p>[Verse]</p>
+                <p>.       C       G        Am      F</p>
+                <p>Imagine there's no heaven</p>
+                <p>.       C       G        Am      F</p>
+                <p>It's easy if you try</p>
+            </div>
+            <div class="shot-grid">
+                <figure class="guide-shot">
+                    <img src="imagens_guia/add_song_lyrics.png" alt="Editor de letra com acordes no ChordFlow">
+                    <figcaption>Editor para introduzir t&iacute;tulo, artista, tom e linhas de letra com acordes.</figcaption>
+                </figure>
+                <figure class="guide-shot">
+                    <img src="imagens_guia/lyrics_en.png" alt="Música com letra e acordes no ChordFlow">
+                    <figcaption>Depois de guardada, a m&uacute;sica aparece num formato leg&iacute;vel e preparado para palco.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">9. VISUALIZA&Ccedil;&Atilde;O DE ACORDES PARA GUITARRA E PIANO</div>
+            <p>Quando o acorde est&aacute; dispon&iacute;vel no visualizador, o ChordFlow pode mostrar a sua forma na guitarra e as notas correspondentes no piano.</p>
+            <ul>
+                <li>Toca num acorde dentro da visualiza&ccedil;&atilde;o da m&uacute;sica para abrir a janela do acorde.</li>
+                <li>Alterna entre os separadores <strong>Guitar</strong> e <strong>Piano</strong>.</li>
+                <li>Percorre as posi&ccedil;&otilde;es, voicings ou invers&otilde;es dispon&iacute;veis.</li>
+                <li>Usa <strong>Listen Chord</strong> para ouvir o acorde quando essa fun&ccedil;&atilde;o estiver dispon&iacute;vel.</li>
+            </ul>
+            <div class="shot-grid">
+                <figure class="guide-shot">
+                    <img src="imagens_guia/guitar_chord_en.png" alt="Diagrama de acorde de guitarra no ChordFlow">
+                    <figcaption>O visualizador mostra a digita&ccedil;&atilde;o do acorde na guitarra com as posi&ccedil;&otilde;es marcadas.</figcaption>
+                </figure>
+                <figure class="guide-shot">
+                    <img src="imagens_guia/piano_chord_en.png" alt="Diagrama de acorde de piano no ChordFlow">
+                    <figcaption>O mesmo acorde pode ser visto no piano, com as notas real&ccedil;adas no teclado.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">10. IMPORTA&Ccedil;&Atilde;O DE M&Uacute;SICAS</div>
+            <p>O ChordFlow suporta importa&ccedil;&atilde;o por ficheiro, texto colado, link e OCR por imagem, com pr&eacute;-visualiza&ccedil;&atilde;o antes de guardar.</p>
+            <ol>
+                <li>No menu principal, seleciona <strong>Import Songs</strong>.</li>
+                <li>Escolhe a origem da importa&ccedil;&atilde;o.</li>
+                <li>Rev&ecirc; o conte&uacute;do detetado.</li>
+                <li>Ajusta t&iacute;tulo, artista, tom e formato se necess&aacute;rio.</li>
+                <li>Guarda a m&uacute;sica no repert&oacute;rio certo.</li>
+            </ol>
+            <ul>
+                <li>Import file</li>
+                <li>Paste chord sheet</li>
+                <li>Import from link</li>
+                <li>Import PDF</li>
+                <li>Import from image (OCR)</li>
+            </ul>
+            <figure class="guide-shot">
+                <img src="imagens_guia/import_song_en.png" alt="Menu de fontes de importação no ChordFlow">
+                <figcaption>O menu de importa&ccedil;&atilde;o re&uacute;ne todas as formas suportadas para adicionar m&uacute;sicas ao ChordFlow.</figcaption>
+            </figure>
+            <h4>Exemplos de formatos</h4>
+            <p><strong>TXT em formato compacto:</strong> Separa as m&uacute;sicas com uma linha em branco.</p>
+            <div class="example-box">
+                <p>WONDERFUL TONIGHT;G;INTRO,G D C D G D C D|VERSE,G D C D G D C D|CHORUS,C D G Em C D G|</p>
+                <p>BOHEMIAN RHAPSODY;Bb;INTRO,Bbmaj7 Gm7 Cm7 F7|VERSE,Bbmaj7 Gm7 Cm7 F7|BRIDGE,Bbmaj7 Eb Bbmaj7 Eb|CHORUS,F7 Bbmaj7 Ebmaj7 Bbmaj7</p>
+            </div>
+            <p><strong>TXT em formato multilinha:</strong> Separa as m&uacute;sicas usando o marcador <code>===MUSIC_SEPARATOR===</code>.</p>
+            <div class="example-box">
+                <p>Hotel California (Dm)</p>
+                <p>Eagles</p>
+                <p>[Intro]</p>
+                <p>.Dm   A7   C   G   A#   F   Gm   A7</p>
+                <p>[Verse]</p>
+                <p>.Dm                 A7</p>
+                <p>On a dark desert highway...</p>
+                <p>...</p>
+                <p>===MUSIC_SEPARATOR===</p>
+                <p>Can't Help Falling in Love (G)</p>
+                <p>Elvis Presley</p>
+                <p>[Intro]</p>
+                <p>.G  D  Em  C  G  D  G</p>
+                <p>...</p>
+            </div>
+            <p><strong>PDF:</strong> Funciona com PDFs com texto selecion&aacute;vel e tamb&eacute;m com PDFs digitalizados convertidos por OCR.</p>
+        </div>
+        <div class="section">
+            <div class="yellow-title">11. DICAS E TRUQUES</div>
+            <ul>
+                <li>Usa o zoom no ecr&atilde; da m&uacute;sica para adaptar a leitura &agrave;s tuas necessidades.</li>
+                <li>Evita que o ecr&atilde; bloqueie durante ensaios e atua&ccedil;&otilde;es.</li>
+                <li>Aproveita os gestos para navegar mais depressa no teu fluxo de trabalho.</li>
+                <li>Organiza as m&uacute;sicas em repert&oacute;rios tem&aacute;ticos para acesso mais r&aacute;pido em palco.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="yellow-title">12. EXEMPLOS DE FICHEIROS</div>
+            <p>Experimenta os nossos exemplos de formatos. Descarrega os ficheiros abaixo e testa a funcionalidade de importa&ccedil;&atilde;o na app ChordFlow.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                <a download="lyrics.txt" href="lyrics.txt" class="back-button">Letra + Acordes</a>
+                <a download="chord_section.txt" href="chord_section.txt" class="back-button">Acordes por Sec&ccedil;&atilde;o</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="yellow-title">13. INSTALA&Ccedil;&Atilde;O DA VERS&Atilde;O WINDOWS</div>
+            <p>A vers&atilde;o Windows do ChordFlow &eacute; distribu&iacute;da por instalador, o que simplifica a instala&ccedil;&atilde;o. Mesmo assim, poder&aacute;s ver avisos do Windows Defender ou do SmartScreen porque a app n&atilde;o est&aacute; assinada com um certificado comercial.</p>
+            <ol>
+                <li>Descarrega o instalador no site.</li>
+                <li>Se aparecer o SmartScreen, clica em <strong>Mais informa&ccedil;&otilde;es</strong>.</li>
+                <li>Depois clica em <strong>Executar assim mesmo</strong>.</li>
+                <li>Segue o assistente de instala&ccedil;&atilde;o.</li>
+                <li>No fim, o ChordFlow fica dispon&iacute;vel no menu Iniciar do Windows.</li>
+            </ol>
+            <p><strong>Importante:</strong> O ChordFlow n&atilde;o recolhe dados pessoais e funciona totalmente offline.</p>
+            <p>Podes tamb&eacute;m consultar a nossa <a href="index.html" style="color: #FFCC33; text-decoration: none;">Pol&iacute;tica de Privacidade</a> para mais informa&ccedil;&otilde;es.</p>
+        </div>
+        <div class="section">
+            <div class="yellow-title">14. USAR IA PARA GERAR FICHEIROS</div>
+            <p>Podes acelerar a prepara&ccedil;&atilde;o das tuas m&uacute;sicas com ferramentas como <strong>ChatGPT</strong> ou <strong>Gemini</strong>. Basta pedir &agrave; IA para gerar m&uacute;sicas num dos formatos reconhecidos pelo ChordFlow e depois importar o ficheiro para a app.</p>
+            <p><strong>Para letras com acordes:</strong></p>
+            <div class="example-box">
 Imagine (C)<br>
 John Lennon<br>
 [Intro]<br>
@@ -398,26 +359,18 @@ Imagine there's no heaven<br>
 It's easy if you try<br>
 <br>
 ===MUSIC_SEPARATOR===
-</div>
-
-<p><strong>Para músicas com acordes por secções:</strong></p>
-<div class="example-box">
+            </div>
+            <p><strong>Para m&uacute;sicas por sec&ccedil;&otilde;es:</strong></p>
+            <div class="example-box">
 IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
-</div>
-
-<p>Depois de gerar o ficheiro com várias músicas nesse formato, basta importar na app ChordFlow.</p>
-
-<div style="margin-top: 30px; text-align: center;">
-    <a href="landing.html" class="back-button">Voltar à Página Inicial</a>
-</div>
-</div>
-
-
-
-<footer>
-    <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
-</footer>
-
-</div>
+            </div>
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="landing.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
