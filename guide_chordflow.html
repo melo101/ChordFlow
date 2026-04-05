@@ -121,6 +121,20 @@
         }
         .guide-shot figcaption { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
         .shot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; align-items: start; }
+        .cta-actions { margin-top: 24px; text-align: center; }
+        .playstore-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #222;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            min-width: 220px;
+        }
+        .playstore-button:hover { background-color: var(--primary-dark); transform: translateY(-2px); }
+        .playstore-note { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
         footer { margin-top: var(--spacing-lg); text-align: center; color: var(--text-light); }
         @media (max-width: 768px) {
             .container { padding: var(--spacing-sm); }
@@ -399,7 +413,14 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
                 <a href="landing.html" class="back-button">Back to Home Page</a>
             </div>
         </div>
-        <footer>
+        <div class="section">
+            <div class="yellow-title">16. GET CHORDFLOW ON ANDROID</div>
+            <p>If you want quick access to setlists, chords, lyrics, and transpose tools during rehearsal, the Android app keeps everything ready in one place.</p>
+            <div class="cta-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="playstore-button" target="_blank" rel="noopener" onclick="gtag('event', 'click_google_play', { 'event_category': 'outbound', 'event_label': 'guide_en_cta' });">Open on Google Play</a>
+                <p class="playstore-note">Free &middot; No ads &middot; Works offline</p>
+            </div>
+        </div>        <footer>
             <p>&copy; 2025 ChordFlow. All rights reserved.</p>
         </footer>
     </div>

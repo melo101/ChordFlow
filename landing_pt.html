@@ -176,6 +176,14 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
+        .playstore-button {
+            min-width: 220px;
+        }
+        .playstore-note {
+            margin-top: 10px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
 
         .button:active {
             transform: translateY(0);
@@ -330,9 +338,11 @@
     <img src="landing_page_pt.png" alt="Capturas da app ChordFlow com repert&oacute;rios, acordes, letras e ferramentas" class="hero-image">
 
     <div class="buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button" onclick="gtag('event', 'clique_google_play', {'app_platform': 'android'});">Ver na Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button playstore-button" target="_blank" rel="noopener" onclick="gtag('event', 'click_google_play', { 'event_category': 'outbound', 'event_label': 'landing_pt_cta' });">Abrir na Google Play</a>
         <a href="https://drive.google.com/file/d/1EiAkt5mBDb2yNcb6yzOJpJz5W1Ld4ri9/view?usp=drive_link" class="button" onclick="gtag('event', 'clique_download_windows', {'app_platform': 'windows'});">Descarregar para Windows</a>
     </div>
+
+    <p class="playstore-note">Gratuito &middot; Sem an&uacute;ncios &middot; Funciona offline</p>
 
     <section class="descricao">
         <div class="section">

@@ -121,6 +121,20 @@
         }
         .guide-shot figcaption { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
         .shot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; align-items: start; }
+        .cta-actions { margin-top: 24px; text-align: center; }
+        .playstore-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #222;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            min-width: 220px;
+        }
+        .playstore-button:hover { background-color: var(--primary-dark); transform: translateY(-2px); }
+        .playstore-note { margin-top: 12px; text-align: center; color: var(--text-light); font-size: 0.95rem; }
         footer { margin-top: var(--spacing-lg); text-align: center; color: var(--text-light); }
         @media (max-width: 768px) {
             .container { padding: var(--spacing-sm); }
@@ -399,7 +413,14 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
                 <a href="landing.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
             </div>
         </div>
-        <footer>
+        <div class="section">
+            <div class="yellow-title">16. ABRIR O CHORDFLOW NO ANDROID</div>
+            <p>Se queres acesso r&aacute;pido a repert&oacute;rios, acordes, letras e transposi&ccedil;&atilde;o durante o ensaio, a app Android deixa tudo pronto no mesmo s&iacute;tio.</p>
+            <div class="cta-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="playstore-button" target="_blank" rel="noopener" onclick="gtag('event', 'click_google_play', { 'event_category': 'outbound', 'event_label': 'guide_pt_cta' });">Abrir na Google Play</a>
+                <p class="playstore-note">Gratuito &middot; Sem an&uacute;ncios &middot; Funciona offline</p>
+            </div>
+        </div>        <footer>
             <p>&copy; 2025 ChordFlow. Todos os direitos reservados.</p>
         </footer>
     </div>
