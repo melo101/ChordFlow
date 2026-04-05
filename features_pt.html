@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades ChordFlow | Repert&oacute;rios, Acordes, Importa&ccedil;&atilde;o, Backup e Offline</title>
+    <meta name="description" content="V&ecirc; as principais funcionalidades do ChordFlow num s&oacute; lugar: organizar repert&oacute;rios, importar m&uacute;sicas, escolher modos de leitura, verificar acordes e fazer backup.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0a2537">
+    <link rel="canonical" href="https://chordflow.org/features_pt.html">
+    <link rel="alternate" hreflang="pt" href="https://chordflow.org/features_pt.html">
+    <link rel="alternate" hreflang="en" href="https://chordflow.org/features_en.html">
+    <link rel="alternate" hreflang="x-default" href="https://chordflow.org/features_en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ChordFlow">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:title" content="Todas as funcionalidades do ChordFlow num s&oacute; lugar">
+    <meta property="og:description" content="Organiza m&uacute;sicas, verifica acordes, ajusta a leitura e mant&eacute;m o repert&oacute;rio seguro com o ChordFlow.">
+    <meta property="og:url" content="https://chordflow.org/features_pt.html">
+    <meta property="og:image" content="https://chordflow.org/imagens_guia/main_pt.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Todas as funcionalidades do ChordFlow num s&oacute; lugar">
+    <meta name="twitter:description" content="Uma vis&atilde;o clara das funcionalidades do ChordFlow para m&uacute;sicos que querem organizar-se e trabalhar offline.">
+    <meta name="twitter:image" content="https://chordflow.org/imagens_guia/main_pt.png">
+    <link rel="icon" type="image/x-icon" href="icone_chordflow.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="icone_chordflow.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="icone_chordflow-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icone_chordflow-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icone_chordflow-180x180.png">
+    <meta name="msapplication-TileImage" content="icone_chordflow-144x144.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETTZ8V04M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QETTZ8V04M');
+    </script>
+    <style>
+        :root {
+            --primary-color: #FFCC33;
+            --primary-dark: #e6b82e;
+            --bg-color: #0a2537;
+            --bg-light: #112c41;
+            --text-color: #ffffff;
+            --text-light: #dddddd;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 40px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-md); }
+        header { padding: var(--spacing-md) 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: var(--spacing-md); }
+        nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s ease; }
+        nav ul li a:hover, nav ul li a.active { color: var(--primary-color); }
+        .hero-copy { max-width: 900px; margin: 0 auto var(--spacing-lg); padding: 0 var(--spacing-md); }
+        .hero-copy h1 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 12px; }
+        .hero-copy p { color: var(--text-light); font-size: 1.1rem; margin: 0 auto; max-width: 760px; }
+        .buttons { margin: var(--spacing-md) 0; }
+        .button {
+            display: inline-block; padding: 14px 28px; margin: var(--spacing-sm); font-size: 16px; color: #222;
+            background-color: var(--primary-color); text-decoration: none; border-radius: 6px; font-weight: 600;
+            transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover { background-color: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .playstore-button { min-width: 220px; }
+        .playstore-note { margin-top: 10px; color: var(--text-light); font-size: 0.95rem; }
+        main { max-width: 1000px; margin: 0 auto; padding: 0 var(--spacing-md) var(--spacing-lg); }
+        .feature-section, .cta-section {
+            margin-bottom: var(--spacing-lg); padding: var(--spacing-md); background-color: var(--bg-light);
+            border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); text-align: left;
+        }
+        .feature-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px; align-items: center; }
+        .feature-text h2, .cta-section h2 { color: var(--primary-color); font-size: 1.7rem; margin-bottom: 12px; }
+        .feature-text p, .cta-section p { color: var(--text-light); font-size: 1rem; }
+        .feature-text p + p { margin-top: 12px; }
+        .feature-shot img {
+            width: 100%; height: auto; display: block; border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        .text-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .text-link:hover { text-decoration: underline; }
+        footer { padding: var(--spacing-lg) 0; color: var(--text-light); font-size: 14px; }
+        footer a { color: var(--primary-color); text-decoration: none; }
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 12px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+            nav ul li { margin: 0 10px; }
+            .hero-copy h1 { font-size: 2rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ChordFlow</div>
+            <nav>
+                <ul>
+                    <li><a href="landing_pt.html">In&iacute;cio</a></li>
+                    <li><a href="guia_chordflow.html">Guia</a></li>
+                    <li><a href="features_pt.html" class="active">Funcionalidades</a></li>
+                    <li><a href="articles/pt/index.html">Artigos</a></li>
+                    <li><a href="features_en.html">EN</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero-copy">
+        <h1>Todas as funcionalidades do ChordFlow num s&oacute; lugar</h1>
+        <p>Organiza m&uacute;sicas, verifica acordes, ajusta a leitura e mant&eacute;m o repert&oacute;rio seguro — tudo na mesma app.</p>
+        <div class="buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button playstore-button" target="_blank" rel="noopener" onclick="gtag('event', 'click_google_play', { 'event_category': 'outbound', 'event_label': 'features_page_cta' });">Abrir na Google Play</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Organizar Repert&oacute;rios</h2><p>Cria repert&oacute;rios para ensaio ou atua&ccedil;&atilde;o e reorganiza m&uacute;sicas rapidamente sempre que necess&aacute;rio.</p><p><a class="text-link" href="articles/pt/organizar-repertorios.html">Ler o artigo sobre repert&oacute;rios</a></p></div><div class="feature-shot"><img src="imagens_guia/set_list_pt.png" alt="Ecr&atilde; de repert&oacute;rios no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Importar M&uacute;sicas</h2><p>Importa m&uacute;sicas a partir de texto, imagens ou PDF e ajusta o conte&uacute;do antes de guardar.</p><p><a class="text-link" href="articles/pt/importar-cifras.html">Ler o artigo sobre importa&ccedil;&atilde;o</a></p></div><div class="feature-shot"><img src="imagens_guia/import_song_pt.png" alt="Ecr&atilde; de importa&ccedil;&atilde;o no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Escolher Como as M&uacute;sicas S&atilde;o Mostradas</h2><p>Alterna entre vista apenas com acordes ou letras com acordes conforme a forma como preferes ler as m&uacute;sicas.</p><p><a class="text-link" href="articles/pt/acordes-vs-letras.html">Ler o artigo sobre formatos de m&uacute;sica</a></p></div><div class="feature-shot"><img src="imagens_guia/music_view_chords_pt.png" alt="Vista compacta de acordes no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Verificar Acordes Instantaneamente</h2><p>Toca num acorde para ver diagramas de guitarra e piano e ouvir o acorde diretamente dentro da app.</p><p><a class="text-link" href="articles/pt/verificar-acordes-rapidamente.html">Ler o artigo sobre verifica&ccedil;&atilde;o de acordes</a></p></div><div class="feature-shot"><img src="imagens_guia/guitar_chord_pt.png" alt="Diagrama de acorde de guitarra no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Ajustar a Leitura com View Mode</h2><p>Escolhe entre vista autom&aacute;tica, cl&aacute;ssica ou responsiva para uma leitura mais confort&aacute;vel em diferentes ecr&atilde;s.</p><p><a class="text-link" href="articles/pt/modo-de-visualizacao-letras.html">Ler o artigo sobre View Mode</a></p></div><div class="feature-shot"><img src="imagens_guia/view_mode_pt.png" alt="Seletor de View Mode no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Backup e Partilha de M&uacute;sicas</h2><p>Exporta repert&oacute;rios completos, m&uacute;sicas individuais ou v&aacute;rias m&uacute;sicas selecionadas e partilha por email, WhatsApp ou outras apps.</p><p><a class="text-link" href="articles/pt/backup-partilhar-musicas-repertorios.html">Ler o artigo sobre backup</a></p></div><div class="feature-shot"><img src="imagens_guia/backup_pt.png" alt="Ecr&atilde; de backup no ChordFlow"></div></div></section>
+        <section class="feature-section"><div class="feature-grid"><div class="feature-text"><h2>Funciona Offline</h2><p>O ChordFlow funciona sem liga&ccedil;&atilde;o &agrave; internet, o que o torna fi&aacute;vel em salas de ensaio ou em contexto de atua&ccedil;&atilde;o.</p></div><div class="feature-shot"></div></div></section>
+        <section class="cta-section"><h2>Mant&eacute;m o teu fluxo musical claro e port&aacute;til</h2><p>Quando repert&oacute;rios, acordes, modos de leitura e backup vivem na mesma app, torna-se mais simples preparar ensaios e trabalhar sem interrup&ccedil;&otilde;es desnecess&aacute;rias.</p><div class="buttons"><a href="https://play.google.com/store/apps/details?id=com.seuusuario.appmusica" class="button playstore-button" target="_blank" rel="noopener" onclick="gtag('event', 'click_google_play', { 'event_category': 'outbound', 'event_label': 'features_bottom_cta' });">Abrir na Google Play</a></div><p class="playstore-note">Gratuito &middot; Sem an&uacute;ncios &middot; Funciona offline</p></section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="privacy.html">Pol&iacute;tica de Privacidade</a></p>
+            <p>&copy; 2026 ChordFlow. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
