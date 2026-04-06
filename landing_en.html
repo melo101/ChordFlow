@@ -462,6 +462,29 @@
 
         }
 
+        .article-preview-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .article-preview-list li {
+            margin-bottom: 12px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .article-preview-list a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-preview-list a:hover {
+            color: var(--primary-color);
+        }
+
         
 
         footer {
@@ -783,7 +806,7 @@
 
         <div class="section">
             <h2>Latest ChordFlow guides</h2>
-            <ul>
+            <ul class="article-preview-list">
                 <li><a href="articles/en/organize-setlists.html">How to Organize Setlists Faster with ChordFlow</a></li>
                 <li><a href="articles/en/import-chord-sheets.html">How to Import Chord Sheets into ChordFlow</a></li>
                 <li><a href="articles/en/chords-vs-lyrics.html">Chords by Section vs Lyrics with Chords</a></li>
