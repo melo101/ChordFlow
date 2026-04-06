@@ -141,13 +141,59 @@
             header { flex-direction: column; align-items: flex-start; }
             .guide-shot { padding: 12px; }
         }
-    </style>
+    
+        .back-to-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 999px;
+            background-color: var(--primary-color, #FFCC33);
+            color: #222;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+            opacity: 0;
+            transform: translateY(12px);
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark, #e6b82e);
+        }
+
+        .back-to-top:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.35), 0 10px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        @media (max-width: 640px) {
+            .back-to-top {
+                right: 14px;
+                bottom: 14px;
+                width: 44px;
+                height: 44px;
+                font-size: 22px;
+            }
+        }
+</style>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
+            <a href="landing_pt.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
         </header>
         <h1 class="yellow-title">GUIA DO UTILIZADOR - CHORDFLOW</h1>
         <div class="section">
@@ -386,7 +432,7 @@
                 <li>No fim, o ChordFlow fica dispon&iacute;vel no menu Iniciar do Windows.</li>
             </ol>
             <p><strong>Importante:</strong> O ChordFlow n&atilde;o recolhe dados pessoais e funciona totalmente offline.</p>
-            <p>Podes tamb&eacute;m consultar a nossa <a href="index.html" style="color: #FFCC33; text-decoration: none;">Pol&iacute;tica de Privacidade</a> para mais informa&ccedil;&otilde;es.</p>
+            <p>Podes tamb&eacute;m consultar a nossa <a href="privacy_pt.html" style="color: #FFCC33; text-decoration: none;">Pol&iacute;tica de Privacidade</a> para mais informa&ccedil;&otilde;es.</p>
         </div>
         <div class="section">
             <div class="yellow-title">15. USAR IA PARA GERAR FICHEIROS</div>
@@ -410,7 +456,7 @@ It's easy if you try<br>
 IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
             </div>
             <div style="margin-top: 30px; text-align: center;">
-                <a href="landing.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
+                <a href="landing_pt.html" class="back-button">Voltar &agrave; P&aacute;gina Inicial</a>
             </div>
         </div>
         <div class="section">
@@ -424,5 +470,25 @@ IMAGINE;C;INTRO,C F C F|VERSE,C F C F|CHORUS,F C G C
             <p>&copy; 2026 ChordFlow. Todos os direitos reservados.</p>
         </footer>
     </div>
+<button type="button" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">&#8593;</button>
+<script>
+(function () {
+    const button = document.querySelector('.back-to-top');
+    if (!button) {
+        return;
+    }
+
+    const toggleButton = () => {
+        button.classList.toggle('is-visible', window.scrollY > 360);
+    };
+
+    button.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', toggleButton, { passive: true });
+    toggleButton();
+})();
+</script>
 </body>
 </html>

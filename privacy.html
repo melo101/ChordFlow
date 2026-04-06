@@ -157,13 +157,59 @@
                 margin-bottom: var(--spacing-sm);
             }
         }
-    </style>
+    
+        .back-to-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 999px;
+            background-color: var(--primary-color, #FFCC33);
+            color: #222;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+            opacity: 0;
+            transform: translateY(12px);
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark, #e6b82e);
+        }
+
+        .back-to-top:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.35), 0 10px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        @media (max-width: 640px) {
+            .back-to-top {
+                right: 14px;
+                bottom: 14px;
+                width: 44px;
+                height: 44px;
+                font-size: 22px;
+            }
+        }
+</style>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">ChordFlow</div>
-            <a href="landing.html" class="back-button">Back to Home Page</a>
+            <a href="index.html" class="back-button">Back to Home Page</a>
         </header>
         
         <h1 class="yellow-title">PRIVACY POLICY</h1>
@@ -217,7 +263,7 @@
             <p>If you have questions about this Privacy Policy, please contact us through the ChordFlow page on the Google Play Store.</p>
             
             <div style="margin-top: 30px; text-align: center;">
-                <a href="landing.html" class="back-button">Back to Home Page</a>
+                <a href="index.html" class="back-button">Back to Home Page</a>
             </div>
         </div>
         
@@ -225,5 +271,25 @@
             <p>&copy; 2026 ChordFlow. All rights reserved.</p>
         </footer>
     </div>
+<button type="button" class="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+<script>
+(function () {
+    const button = document.querySelector('.back-to-top');
+    if (!button) {
+        return;
+    }
+
+    const toggleButton = () => {
+        button.classList.toggle('is-visible', window.scrollY > 360);
+    };
+
+    button.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', toggleButton, { passive: true });
+    toggleButton();
+})();
+</script>
 </body>
 </html>

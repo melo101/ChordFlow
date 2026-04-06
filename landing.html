@@ -6,24 +6,23 @@
   <title>ChordFlow Language Redirect</title>
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#0a2537" />
-  <link rel="canonical" href="https://chordflow.org/landing.html" />
-  <link rel="alternate" hreflang="en" href="https://chordflow.org/landing_en.html" />
+  <link rel="canonical" href="https://chordflow.org/" />
+  <link rel="alternate" hreflang="en" href="https://chordflow.org/" />
   <link rel="alternate" hreflang="pt" href="https://chordflow.org/landing_pt.html" />
   <link rel="alternate" hreflang="x-default" href="https://chordflow.org/landing.html" />
-  <meta http-equiv="refresh" content="0; url=landing_en.html" />
+  <meta http-equiv="refresh" content="0; url=index.html" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETTZ8V04M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-QETTZ8V04M');
-  </script>
-  <script>
+
     const lang = navigator.language || navigator.userLanguage || 'en';
-    window.location.href = lang.startsWith('pt') ? 'landing_pt.html' : 'landing_en.html';
+    window.location.replace(lang.startsWith('pt') ? 'landing_pt.html' : 'index.html');
   </script>
 </head>
 <body>
-  <p>Redirecting to the right ChordFlow page. <a href="landing_en.html">English</a> | <a href="landing_pt.html">Portugu&ecirc;s</a></p>
+  <p>Redirecting to the right ChordFlow page. <a href="index.html">English</a> | <a href="landing_pt.html">Portugu&ecirc;s</a></p>
 </body>
 </html>

@@ -103,7 +103,53 @@
             .hero-copy h1 { font-size: 2rem; }
             .feature-grid { grid-template-columns: 1fr; }
         }
-    </style>
+    
+        .back-to-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 999px;
+            background-color: var(--primary-color, #FFCC33);
+            color: #222;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+            opacity: 0;
+            transform: translateY(12px);
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark, #e6b82e);
+        }
+
+        .back-to-top:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.35), 0 10px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        @media (max-width: 640px) {
+            .back-to-top {
+                right: 14px;
+                bottom: 14px;
+                width: 44px;
+                height: 44px;
+                font-size: 22px;
+            }
+        }
+</style>
 </head>
 <body>
     <div class="container">
@@ -111,7 +157,7 @@
             <div class="logo">ChordFlow</div>
             <nav>
                 <ul>
-                    <li><a href="landing_en.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="guide_chordflow.html">Guide</a></li>
                     <li><a href="features_en.html" class="active">Features</a></li>
                     <li><a href="articles/en/index.html">Articles</a></li>
@@ -146,5 +192,25 @@
             <p>&copy; 2026 ChordFlow. All rights reserved.</p>
         </div>
     </footer>
+<button type="button" class="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+<script>
+(function () {
+    const button = document.querySelector('.back-to-top');
+    if (!button) {
+        return;
+    }
+
+    const toggleButton = () => {
+        button.classList.toggle('is-visible', window.scrollY > 360);
+    };
+
+    button.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', toggleButton, { passive: true });
+    toggleButton();
+})();
+</script>
 </body>
 </html>
